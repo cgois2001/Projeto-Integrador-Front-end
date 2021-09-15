@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link href="/componentes/styles.css" rel = "stylesheet">
+        <title></title>
+    </head>
+
+    <body>
+        <!--FORMULÁRIO DA PAGINA DE LOGIN (FALTA APENAS BOTÕES)-->
+        <div class="container d-flex flex-column col-5">
+            <form>
+                <div class="mb-3">
+                    <label for="" class="form-label">E-mail</label>
+                    <input type="email" class="form-control caixas-de-insercao login" aria-describedby="emailHelp"
+                        placeholder="Digite seu e-mail">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Senha</label>
+                    <input type="password" class="form-control caixas-de-insercao login" placeholder="Digite sua senha">
+                    <div>
+                        <a href="" class = "esquecido">Esqueci minha senha</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--FIM DO FORMULÁRIO DA PAGINA DE LOGIN-->
+        <!--FORMULÁRIO DA PAGINA DE CADASTRO-->
+        <div class="container-flex d-flex flex-column cadastro">
+            <form class="d-flex flex-column">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="mb-3 col-5 p-3">
+                        <label for="" class="form-label">Nome</label>
+                        <input type="text" class="form-control caixas-de-insercao" aria-describedby="emailHelp"
+                            placeholder="Digite seu nome">
+                    </div>
+                    <div class="mb-3 col-5 p-3">
+                        <label for="" class="form-label">Sobrenome</label>
+                        <input type="text" class="form-control caixas-de-insercao" placeholder="Digite o Sobrenome">
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="mb-3 col-5 p-3">
+                        <label for="" class="form-label">CPF</label>
+                        <input type="text" class="form-control caixas-de-insercao" aria-describedby="emailHelp"
+                            placeholder="Digite seu CPF">
+                    </div>
+                    <div class="mb-3 col-5 p-3">
+                        <label for="" class="form-label">Usuário da Steam</label>
+                        <input type="text" class="form-control caixas-de-insercao" placeholder="Digite o Usuário">
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="mb-3 col-5 p-3">
+                        <label for="" class="form-label">Gênero</label>
+                        <select class="form-select caixas-de-insercao" aria-label="Default select example">
+                            <option selected class = "selecao">Selecione o Gênero</option>
+                            <option value="1" class = "selecao">Homem</option>
+                            <option value="2" class = "selecao">Mulher</option>
+                            <option value="3" class = "selecao">Outros</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 col-5 p-3">
+                        <label for="" class="form-label">Data de nascimento</label>
+                        <input type="date" class="form-control caixas-de-insercao">
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="mb-3 col-5 p-3">
+                        <label for="" class="form-label">Crie uma senha</label>
+                        <input type="password" class="form-control caixas-de-insercao" aria-describedby="emailHelp"
+                            placeholder="Digite a senha">
+                    </div>
+                    <div class="mb-3 col-5 p-3">
+                        <label for="" class="form-label">Repita a senha</label>
+                        <input type="password" class="form-control caixas-de-insercao" placeholder="Digite a senha">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--FIM DO FORMULÁRIO DE CADASTRO-->
+        <!--FORMULÁRIO DE CADASTRO DE CARTÃO-->
+        <div class="container-flex d-flex justify-content-center caixa-forma-pagamento">
+            <div class="d-flex flex-column forma-pagamento col-5">
+                <div class="form-check">
+                    <input class="form-check-input radio-forma-pagamento" type="radio" name="flexRadioDefault" checked>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                    CARTÃO
+                    </label>
+                </div>
+                <div class = "container cadastro-cartao d-flex flex-column ">
+                    <input class="form-control p-2 caixa-cadastro-cartao" type="text" placeholder="Número do cartão">
+                    <input class="form-control p-2 caixa-cadastro-cartao" type="text" placeholder="Nome completo">
+                    <div class = "d-flex flex-row">
+                        <div class = "col-5 d-flex">
+                            <input class="form-control p-2 caixa-cadastro-cartao" type="text" placeholder="Data de Vencimento">
+                        </div>
+                        <div class = "col-1"></div>
+                        <div class = "col-6 d-flex">
+                            <input class="form-control p-2 caixa-cadastro-cartao" type="text" placeholder="Código de Segurança">
+                        </div> 
+                    </div>
+                    <input class="form-control p-2 caixa-cadastro-cartao" type="text" placeholder="CPF do títular do cartão" >
+                    <select class="form-select caixa-cadastro-cartao" aria-label="Default select example">
+                        <option selected class = "selecao">1x de R$ 400,00 sem juros</option>
+                        <option value="1" class = "selecao">2x de R$ 200,00 sem juros</option>
+                        <option value="2" class = "selecao">3x de R$ 133,33 sem juros</option>
+                        <option value="3" class = "selecao">4x de R$ 100,00 sem juros</option>
+                    </select>
+                </div>
+                  <div class="form-check">
+                    <input class="form-check-input radio-forma-pagamento" type="radio" name="flexRadioDefault">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                    PIX
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input radio-forma-pagamento" type="radio" name="flexRadioDefault">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      BOLETO
+                    </label>
+                  </div>
+            </div>
+        </div>
+        <!--FIM DO FORMULÁRIO DO CADASTRO DE CARTÃO-->
+    </body>
+
+</html>
