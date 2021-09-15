@@ -1,26 +1,31 @@
-body {
-    background-color: #181818;
-}
-
 .card-produto-mvp {
-    padding: 0;
     align-items: center;
     background-color: #766289;
+    color: #EFEFEF;
+    border-radius: 2%;
 }
 
-.img-produto-mvp {
-    width: 100px;
-    height: 10vh;
+h3 {
+    color: #EFEFEF;
 }
 
 .card-produto-mvp p {
-    font-family: chakra;
-    font-size: 0.75;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .promocao-de-preco{
-    padding: 0;
-    margin: 0;
-    opacity: .6;
+    font-size: .8rem;
+    opacity: .7;
     text-decoration: line-through;
+}
+
+.preco {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.card-linha {
+    background-color: #28004F;
+    width: 100%;
+    border-width: .4vh;
 }
