@@ -1,0 +1,11 @@
+.titulo-banner {
+    height: 50px;
+    background-color: #28004F;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.caixa-banner {
+    background-color: #28004F;
+}
