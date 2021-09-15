@@ -1,0 +1,14 @@
+body {
+    background-color: #181818;
+}
+
+
+.card-produto-mvp {
+    background-color: #c4c4c4;
+    opacity: .5;
+}
+
+
+.img-produto-mvp {
+    width: 100px;
+}
