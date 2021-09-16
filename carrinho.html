@@ -8,8 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Estilo MVP -->
-    <link rel="stylesheet" href="./css/estilo.css">
-    <link rel="stylesheet" href="./css/carrinho.css">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="stylesheet" href="/css/carrinho.css">
+    <link rel="stylesheet" href="/componentes/botoes/botoes.css">
+    <link rel="stylesheet" href="/componentes/footer/footer.css">
+    <link rel="stylesheet" href="/componentes/formularios/styles.css">
 
     <title>MVP SKINS | CARRINHO</title>
     <link rel="shortcut icon" type="imagex/png" href="/images/ID/image (2) (1).png">
@@ -18,12 +21,256 @@
   <body>
     <!-- Início da header -->
 
-
+    <!-- Fim do header  -->
+  
     <!-- Início do body  -->
+    <!-- Início do container principal -->
+    <div class="px-4 px-lg-0">    
+      <div class="pb-5">
+        <div class="container">
+          <div class="row mx-0">
+            <div class="col-lg-12 p-2 mb-5">
+              <!-- Início da lateral do carrinho -->
+              <div class="cupom-banner-carrinho px-5 py-3 col-4 ">
+                <!-- Início card de cupom de desconto do carrinho  -->
+                <div class="cupom-desconto col-12">
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h3 class="card-title">Card title</h3>
+                      <h4 class="card-subtitle mb-2 text-muted">Card subtitle</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <!-- Button de segunda importância  -->
+                      <button type="button" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp">Aplicar cupom</button>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- Fim card de cupom de desconto do carrinho  -->
+                <!-- Início banner lateral do carrinho  -->
+                <div class="cupom-desconto col-12">
+                  
+                </div>
+                <!-- Fim banner lateral do carrinho  -->
+              </div>
+              <!-- Fim da lateral do carrinho -->
+              
+              <!-- Início da listagem de produtos no carrinho -->
+              <div class="table-responsive carrinho px-5 py-3 col-8">
+                <table class="table container-itens">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="border-0">
+                        <div class="p-2 px-3 text-uppercase titulo-carrinho">Produto</div>
+                      </th>
+                      <th scope="col" class="border-0">
+                        <div class="py-2 text-uppercase titulo-carrinho">Descrição</div>
+                      </th>
+                      <th scope="col" class="border-0">
+                        <div class="py-2 text-uppercase titulo-carrinho">Preço</div>
+                      </th>
+                      <th scope="col" class="border-0">
+                        <div class="py-2 text-uppercase titulo-carrinho">Excluir</div>
+                      </th>
+                    </tr>
+                  </thead>
+
+                  <!-- =====================PRIMEIRO PRODUTO===================== -->
+                  <tr class="item mx-0">
+                    <th scope="row" class="border-0">
+                      <div class="p-2 container-img-item">
+                        <img src="/images/produtos/produto-carrousel-1.png" alt="" class="img-fluid rounded shadow-sm img-item">
+                      </div>
+                    </th>
+                    <td class="col-5">
+                      <div class="ml-3 d-inline-block align-middle">
+                        <span class="text-muted font-italic d-block">Categoria: luvas</span>
+                        <h3 class="mb-0"> <a href="#" class="d-inline-block align-middle">LUVAS ESPORTIVAS | BATRÁQUIO BRONZEADO</a></h3>
+                        <span class="text-muted font-italic d-block">Raridade: Secreto</span>
+                      </div>
+                    </td>
+                    <td class="border-0 align-middle col-2 preco">R$79,00</td>
+                    <td class="border-0 align-middle col-2 trash-item "><a href="#"><i class="fa fa-trash"><img src="/componentes/icones/icon-menu.png" alt=""></i></a></td>
+                  </tr>
+
+                  <!-- =====================SEGUNDO PRODUTO===================== -->
+                  <tr class="item">
+                    <th scope="row" class="border-0">
+                      <div class="p-2 container-img-item">
+                        <img src="/images/produtos/produto-carrousel-1.png" alt="" class="img-fluid rounded shadow-sm img-item">
+                      </div>
+                    </th>
+                    <td class="col-5">
+                      <div class="ml-3 d-inline-block align-middle">
+                        <span class="text-muted font-italic d-block">Categoria: luvas</span>
+                        <h3 class="mb-0"> <a href="#" class="d-inline-block align-middle">LUVAS ESPORTIVAS | BATRÁQUIO BRONZEADO</a></h3>
+                        <span class="text-muted font-italic d-block">Raridade: Secreto</span>
+                      </div>
+                    </td>
+                    <td class="border-0 align-middle col-2 preco">R$79,00</td>
+                    <td class="border-0 align-middle col-2 trash-item "><a href="#"><i class="fa fa-trash"><img src="/componentes/icones/icon-menu.png" alt=""></i></a></td>
+                  </tr>
+
+                  <!-- =====================TERCEIRO PRODUTO===================== -->
+                  <tr class="item">
+                    <th scope="row" class="border-0">
+                      <div class="p-2 container-img-item">
+                        <img src="/images/produtos/produto-carrousel-1.png" alt="" class="img-fluid rounded shadow-sm img-item">
+                      </div>
+                    </th>
+                    <td class="col-5">
+                      <div class="ml-3 d-inline-block align-middle">
+                        <span class="text-muted font-italic d-block">Categoria: luvas</span>
+                        <h3 class="mb-0"> <a href="#" class="d-inline-block align-middle">LUVAS ESPORTIVAS | BATRÁQUIO BRONZEADO</a></h3>
+                        <span class="text-muted font-italic d-block">Raridade: Secreto</span>
+                      </div>
+                    </td>
+                    <td class="border-0 align-middle col-2 preco">R$79,00</td>
+                    <td class="border-0 align-middle col-2 trash-item "><a href="#"><i class="fa fa-trash"><img src="/componentes/icones/icon-menu.png" alt=""></i></a></td>
+                  </tr>
+
+                </table>
+                <!-- Fim da listagem de proodutos no carrinho -->
+
+                <!-- Início da div de preços  -->
+                <div class="container preco-final py-3">
+                  <div class="container-cupom-desconto p-3 col-9">
+                    <div class="cupom-titulo row px-3">
+                      <p class="m-0">Cupom de desconto</p>
+                    </div>
+
+                    <div class="input-cupom row"> 
+                      <div class="col-8">
+                        <input type="text" class="form-control caixas-de-insercao login" aria-describedby="cupom" placeholder="Digite seu cupom">
+                      </div>
+
+                      <div class="col-4">
+                        <!-- Button de segunda importância  -->
+                        <button type="button" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp">Aplicar</button>
+                      </div>
+                    </div>
+
+                    <div class="col-6 cupom">
+
+                    </div>
+                  </div>
+
+                    <div class="container-preco p-4 col-3">
+                      <div class="pagamento row">
+                        <p class="m-auto">Total</p>
+                      </div>
+
+                      <div class="total row">
+                          <p class="m-auto">R$1.448,99</p>
+                      </div>
+                    </div>
+                </div>
+                <!-- Fim da div de preços  -->
+
+                <!-- Início da div com botões -->
+                <div class="botoes-carrinho py-3 px-0">
+                  <!-- Button de segunda importância  -->
+                  <button type="button" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp btn-continuar-comprando mx-5">Continuar comprando</button>
+            
+                  <!-- Button de primeira importância -->
+                  <button type="button" class="btn btn-primary btn-mvp btn-primario-mvp">Finalizar compra</button>
+                </div>
+                <!-- Fim da div com botões -->
+              </div>
 
 
-    <!-- Início do footer  -->
 
+            </div>
+          </div>    
+        </div>
+      </div>
+    </div>
+    <!-- Fim do carrinho de compras -->
+
+
+
+
+
+
+
+
+    <!-- Fim do body  -->
+
+    <!-- inicio footer -->
+    <footer class="container d-flex justify-content-center mw-100 px-0">
+      <div class="row col-12 justify-content-around py-3">
+          <div class="row d-none d-lg-flex col-lg-8 justify-content-around">
+              <!-- primeira coluna -->
+              <div class="col-4">
+                  <div class="texto-footer">INSTITUCIONAL</div>
+                  <div class="texto-footer">PARCEIROS</div>
+                  <div class="texto-footer">TERMOS DE SERVIÇO</div>
+                  <div class="texto-footer">POLÍTICA DE PRIVACIDADE</div>
+                  <div class="texto-footer">POLÍTICA DE COOKIES</div>
+              </div>
+              <!-- segunda coluna -->
+              <div class="col-4">
+                  <div class="texto-footer">COMO COMPRAR</div>
+                  <div class="texto-footer">COMO ME CADASTRAR</div>
+                  <div class="texto-footer">PAGAMENTOS</div>
+                  <div class="texto-footer">DEVOLUÇÕES</div>
+                  <div class="texto-footer">F.A.Q</div>
+              </div>
+              <!-- terceira coluna -->
+              <div class="col-4">
+                  <div class="texto-footer"><a class="link-footer" href="">LOGIN</a></div>
+                  <div class="texto-footer"><a class="link-footer" href="">CADASTRE-SE</a></div>
+                  <div class="texto-footer"><a class="link-footer" href="">RECUPERAR SENHA</a></div>
+                  <div class="texto-footer"><a class="link-footer" href="">FALE CONOSCO</a></div>
+              </div>
+              <!-- dados da empresa -->
+              <div class="row col-12 justify-content-center pt-3">© MVP SKINS 2021 | CNPJ: 61.585.865/0001-51 |  TODOS OS DIREITOS RESERVADOS</div>
+          </div>
+          <!-- quarta coluna  -->
+          <div class="col-12 col-lg-4">
+              <!-- redes sociais -->
+              <div class="row col-12 justify-content-center pb-1 mx-0">SIGA A GENTE</div>
+              <div class="row col-12 justify-content-center justify-content-lg-around py-1">
+                  <div class="col-2 col-lg-3 texto-footer">
+                      <a class="link-footer" href="https://www.facebook.com/" target="_blank">
+                          <img src="./componentes/icones/icon-facebook.png" alt="ícone do facebook" class="icon-footer">
+                      </a>
+                  </div>
+                  <div class="col-2 col-lg-3 texto-footer">
+                      <a class="link-footer" href="https://twitter.com/" target="_blank">
+                          <img src="./componentes/icones/icon-twitter.png" alt="ícone do twitter" class="icon-footer">
+                      </a>
+                  </div>
+                  <div class="col-2 col-lg-3 texto-footer">
+                      <a class="link-footer" href="https://discord.com/" target="_blank">
+                      <img src="./componentes/icones/icon-discord.png" alt="ícone do discord" class="icon-footer">
+                      </a>
+                  </div>
+                  <div class="col-2 col-lg-3 texto-footer">
+                      <a class="link-footer" href="https://www.instagram.com/" target="_blank">
+                          <img src="./componentes/icones/icon-instagram.png" alt="ícone do instagram" class="icon-footer">
+                      </a>
+                  </div>
+              </div>
+              <hr class="d-none d-lg-flex col-lg-12 justify-content-center">
+              <!-- metodos de pagamento -->
+              <div class="row d-none d-lg-flex col-12 justify-content-center pb-1 mx-0">MÉTODOS DE PAGAMENTO</div>
+              <div class="row d-none d-lg-flex col-lg-12 justify-content-around py-1">
+                  <div class="col-lg-3 texto-footer"><img src="./componentes/icones/icon-mastercard.png" alt="ícone do mastercard" class="icon-footer"></div>
+                  <div class="col-lg-3 texto-footer"><img src="./componentes/icones/icon-visa.png" alt="ícone da visa" class="icon-footer"></div>
+                  <div class="col-lg-3 texto-footer"><img src="./componentes/icones/icon-codigo-de-barras.png" alt="ícone do boleto" class="icon-footer"></div>
+                  <div class="col-lg-3 texto-footer"><img src="./componentes/icones/icon-pix.png" alt="ícone do pix" class="icon-footer"></div>
+              </div>
+              <div class="row d-lg-none col-12 justify-content-center py-3 mx-0">
+                  <div class="texto-footer"><a class="link-footer" href="">LOGIN</a></div><br>
+                  <div class="texto-footer"><a class="link-footer" href="">CADASTRE-SE</a></div><br>
+                  <div class="texto-footer"><a class="link-footer" href="">RECUPERAR SENHA</a></div><br>
+                  <div class="texto-footer"><a class="link-footer" href="">FALE CONOSCO</a></div><br>
+              </div>
+              <div class="row d-lg-none col-12 justify-content-center py-3 mx-0 text-center">© MVP SKINS 2021 | CNPJ: 61.585.865/0001-51 |  TODOS OS DIREITOS RESERVADOS</div>
+          </div>
+      </div>
+    </footer>
+    <!-- fim footer -->
 
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

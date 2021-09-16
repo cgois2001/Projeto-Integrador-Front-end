@@ -1,0 +1,166 @@
+/* Início da listagem dos produtos no carrinho */
+.carrinho {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #766289;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+
+.container-itens {
+    height: 20vh;
+    width: 48vw;
+    border-collapse: collapse;
+    border-spacing: 8px 0;
+}
+
+.titulo-carrinho {
+    color: #28004F;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+h3, a {
+    color: #EFEFEF !important;
+}
+
+.text-muted {
+    font-size: .7rem !important;
+    color: #EFEFEF !important;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: .8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color:#28004F !important;
+    text-decoration: none;
+}
+
+tbody{
+    width: 100%;
+}
+
+.item {
+    border-bottom: 1px solid #EFEFEF !important;
+    border-top: 1px solid #EFEFEF !important;
+
+}
+
+.item th{
+    padding: 0;
+    height: 1vh;
+}
+
+.container-img-item {
+    text-align: center;
+}
+
+.img-item {
+    height: 10vh;
+}
+
+.preco {
+    font-family: 'Chakra Petch', sans-serif;
+    text-align: center;
+}
+
+.trash-item {
+    text-align: center;
+}
+
+.trash-item img {
+    height: 3vh;
+}
+/* Fim da listagem dos produtos no carrinho */
+
+/* Início da div de preços*/
+/* Cupom de desconto  */
+.container-cupom-desconto {
+    border: 2px solid #28004F;
+    border-radius: 4px;
+    margin-right: 4px;
+}
+
+.cupom-titulo p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: left;
+    color: #28004F;
+    text-transform: uppercase;
+}
+
+.input-cupom {
+    display: flex;
+}
+
+/* Preço final */
+.preco-final {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-preco {
+    border: 2px solid #28004F;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.pagamento p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    color: #28004F;
+}
+
+.total p {
+    font-size: .9rem;
+    font-weight: 700;
+}
+/* Fim da div de preços  */
+
+/* Início botoões do carrinho  */
+.botoes-carrinho {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.btn-mvp {
+    border-width: 2px;
+}
+/* Fim botoões do carrinho  */
+
+
+/* MEDIAS QUERIES  */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) {  */
+
+/* } */
