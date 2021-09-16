@@ -1,0 +1,98 @@
+body{
+    background-color: #28004F;
+    color: #ffffff;
+}
+
+.nav-dashboard{
+    background-color: #EFEFEF;
+    color: #000000;
+    font-size: 14px;
+}
+
+.nav-dashboard .link-pagamento{
+    color: #000000;
+    text-decoration: none;
+}
+
+.link-pagamento:hover{
+    color: #FD4712;
+}
+.titulo-nav{
+    font-weight: 500;
+    margin: 40px 0;
+}
+
+.itens-nav{
+    margin-bottom:50px;
+}
+
+.nav-historico::before{
+    content:"";
+    background-image: url(../images/icones/icon-sacola.png);
+    background-size: 20px;
+    width:20px;
+    height:20px;
+    position:absolute;   
+    margin-left: -22px; 
+}
+
+.nav-dados::before{
+    content:"";
+    background-image: url(../images/icones/icon-pessoa.png);
+    background-size: 20px;
+    width:20px;
+    height:20px;
+    position:absolute;   
+    margin-left: -22px; 
+}
+
+.nav-contato{
+    margin-top:50px;
+}
+
+.imagem-nav{
+    margin: 15px 0;
+    width:50px;
+    height:50px;
+}
+
+.div-dashboard{
+    background-color: #c4c4c480;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.imagem-historico{
+    width:80px;
+    height:80px;
+}
+
+.titulo-div{
+    font-size: 16px;
+    margin:20px 0;
+    font-weight: 500;
+}
+
+.nome-coluna{
+    text-align: center;
+    font-size:14px;
+}
+
+.texto-coluna{
+    margin: 10px 0 10px 0;
+    padding: 3px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    align-items: center;
+    border-bottom: 2px solid #28004F;
+}
+
+.btn-mvp:hover, .btn-mvp:focus-within {
+    box-shadow: none !important;  
+    transition: 0.5s;
+    background-color: transparent !important; /* ALTERAR O BACKGROUND-COLOR SE ADICIONAR EM UMA DIV COM COR DIFERENTE DE #181818  */
+    color: #FD4712 !important;
+    border-color: #FD4712 !important;
+    border-width: 2px;
+}

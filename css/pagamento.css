@@ -5,16 +5,20 @@ body{
 .h1-pagamento{
     text-align: center;
     color: #ffffff;
+    font-size: 30px;
+    font-weight: 300;
 }
 
 .container-pagamento{
     background-color:#c4c4c480;
     border-radius: 8px;
+    font-size: 12px;
 }
 
 .div-pagamento{
     border-bottom: 3px solid #28004F;
     width:100%;
+    font-size: 12px;
 }
 
 .produto-pagamento{
@@ -22,13 +26,19 @@ body{
 }
 
 .imagem-resumo{
+    height: 100px;
+    width: 100px;
     display: block;
-    vertical-align: middle;
+    margin: auto;
 }
 
 .texto-pagamento{
     text-align: center;
     margin: 0px;
+}
+
+.valores-pagamento{
+    font-size:18px;
 }
 
 .linha-pagamento{
@@ -51,17 +61,18 @@ body{
 }
 
 .formas-pagamento{
-    margin: auto 0 auto 0 !important;
-}
-
-.botao-cupom{
-    background-color: #c4c4c480;
-    box-shadow: none;
+    margin:auto;
 }
 
 .quantidade-pagamento{
     margin:10px 0 10px 0;
 }
+
 p{
     margin-bottom: 1px;
+}
+
+.btn-cupom{
+    font-size: 12px;
+    height: 30px;
 }
