@@ -1,0 +1,26 @@
+body {
+    background-color: #181818;
+}
+
+.card-produto-mvp {
+    padding: 0;
+    align-items: center;
+    background-color: #766289;
+}
+
+.img-produto-mvp {
+    width: 100px;
+    height: 10vh;
+}
+
+.card-produto-mvp p {
+    font-family: chakra;
+    font-size: 0.75;
+}
+
+.promocao-de-preco{
+    padding: 0;
+    margin: 0;
+    opacity: .6;
+    text-decoration: line-through;
+}

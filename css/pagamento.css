@@ -1,0 +1,67 @@
+body{
+    background-color: #28004F;
+    color:#ffffff;
+}
+.h1-pagamento{
+    text-align: center;
+    color: #ffffff;
+}
+
+.container-pagamento{
+    background-color:#c4c4c480;
+    border-radius: 8px;
+}
+
+.div-pagamento{
+    border-bottom: 3px solid #28004F;
+    width:100%;
+}
+
+.produto-pagamento{
+    border: 1px solid #ffffff;
+}
+
+.imagem-resumo{
+    display: block;
+    vertical-align: middle;
+}
+
+.texto-pagamento{
+    text-align: center;
+    margin: 0px;
+}
+
+.linha-pagamento{
+    border-left: 3px solid #28004F;
+}
+
+.total-pagamento{
+    background-color: #c4c4c480;
+    border-radius: 8px;
+    width:50%;
+}
+
+.imagem-pagamento{
+    width: 40px;
+    height: 40px;
+    display:block;
+    margin: auto;
+    border-radius: 100%;
+    background-color: #28004F;
+}
+
+.formas-pagamento{
+    margin: auto 0 auto 0 !important;
+}
+
+.botao-cupom{
+    background-color: #c4c4c480;
+    box-shadow: none;
+}
+
+.quantidade-pagamento{
+    margin:10px 0 10px 0;
+}
+p{
+    margin-bottom: 1px;
+}
