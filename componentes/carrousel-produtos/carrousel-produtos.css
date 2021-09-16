@@ -1,8 +1,7 @@
 .cards-produtos {
-    /* display: flex !important; */
-    flex-wrap: nowrap;
-    width: 100vw;
+    display: flex !important;
     justify-content: center;
+    flex-wrap: nowrap;
 }
 
 
