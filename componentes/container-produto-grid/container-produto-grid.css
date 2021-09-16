@@ -1,26 +1,129 @@
-body {
-    background-color: #181818;
-}
-
 .card-produto-mvp {
-    padding: 0;
     align-items: center;
     background-color: #766289;
+    color: #EFEFEF;
+    border-radius: 8px;
 }
 
-.img-produto-mvp {
-    width: 100px;
-    height: 10vh;
+h3 {
+    color: #EFEFEF;
 }
 
 .card-produto-mvp p {
-    font-family: chakra;
-    font-size: 0.75;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .promocao-de-preco{
-    padding: 0;
-    margin: 0;
-    opacity: .6;
+    font-size: .8rem;
+    opacity: .7;
     text-decoration: line-through;
+}
+
+.preco {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.card-linha {
+    background-color: #28004F;
+    width: 100%;
+    border-width: .4vh;
+}
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    h3 {
+        font-size: .7rem;
+    }
+    .promocao-de-preco{
+        font-size: .6rem;
+    }
+    
+    .preco {
+        font-size: .8rem;
+    }
+    
+    .card-linha {
+        background-color: #28004F;
+        width: 100%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h3 {
+        font-size: .7rem;
+    }
+    .promocao-de-preco{
+        font-size: .6rem;
+    }
+    
+    .preco {
+        font-size: .8rem;
+    }
+    
+    .card-linha {
+        background-color: #28004F;
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    h3 {
+        font-size: .8rem;
+    }
+    .promocao-de-preco{
+        font-size: .7rem;
+    }
+    
+    .preco {
+        font-size: .9rem;
+    }
+    
+    .card-linha {
+        background-color: #28004F;
+        width: 100%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    h3 {
+        font-size: .8rem;
+    }
+    .promocao-de-preco{
+        font-size: .7em;
+    }
+    
+    .preco {
+        font-size: .9rem;
+    }
+    
+    .card-linha {
+        background-color: #28004F;
+        width: 100%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    h3 {
+        font-size: .9rem;
+    }
+    .promocao-de-preco{
+        font-size: .8rem;
+    }
+    
+    .preco {
+        font-size: 1rem;
+    }
+    
+    .card-linha {
+        background-color: #28004F;
+        width: 100%;
+    }
 }
