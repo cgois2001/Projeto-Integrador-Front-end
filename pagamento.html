@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="./css/footer.css" rel="stylesheet">
+    <link href="./css/pagamento.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!-- inicio pagamento -->
+    <h1 class="h1-pagamento mt-4 mb-0">PAGAMENTO</h1>
+    <section class="container d-flex mw-100 my-5 p-0">
+        <div class="row m-0">
+        <!-- inicio resumo do pedido  -->
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center m-0 my-4 p-0">
+                <div class="col-11 container-pagamento">
+                    <div class="col-12 div-pagamento">
+                        <div class="row col-11 m-3 p-2 produto-pagamento">
+                            <div class="col-5"><img class="imagem-resumo" src="./componentes/icones/icon-pix.png" alt=""></div>
+                            <div class="col-7">
+                                <div>LUVAS ESPORTIVAS | BATRÁQUIO BRONZEADO</div>
+                                <div class="quantidade-pagamento">QUANTIDADE: 1</div>
+                                <div><b>PREÇO</b></div>
+                            </div>
+                        </div>
+                        <div class="row col-11 m-3 p-2 produto-pagamento">
+                            <div class="col-5 imagem-resumo"><img class="imagem-resumo" src="./componentes/icones/icon-pix.png" alt=""></div>
+                            <div class="col-7">
+                                <div>LUVAS ESPORTIVAS | BATRÁQUIO BRONZEADO</div>
+                                <div class="quantidade-pagamento">QUANTIDADE: 1</div>
+                                <div><b>PREÇO</b></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row col-11 m-3 p-2 justify-content-around">
+                        <div class="col-6 texto-pagamento">
+                            <p>PAGAMENTO</p>
+                            <p><b>R$1.382,00</b></p>
+                        </div>
+                        <div class="col-6 texto-pagamento linha-pagamento">
+                            <p>TAXAS</p>
+                            <p><b>R$100,00</b></p>
+                        </div>
+                    </div>
+                    <div class="row col-11 m-3 p-2 justify-content-center">
+                        <div class="col-12 texto-pagamento total-pagamento">
+                            <p>TOTAL</p>
+                            <p><b>R$1.392,00</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- fim resumo do pedido  -->
+            <!-- inicio formas de pagamento -->
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center m-0  my-4 p-0"> 
+                <div class="col-11 container-pagamento">
+                    <div class="row col-12 mx-0 p-2 div-pagamento">
+                        <input  class="col-1  formas-pagamento" type="radio" name="forma-pagamento" value="cartao-credito">
+                        <div class="col-2"><img src="./componentes/icones/icon-cartao-credito.png" class="imagem-pagamento"></div>
+                        <div class="col-9  formas-pagamento">CARTÃO DE CRÉDITO</div>
+                    </div>
+                    
+                    <div class="row col-12 mx-0 p-2 div-pagamento">
+                        <input  class="col-1  formas-pagamento" type="radio" name="forma-pagamento" value="pix">
+                        <div class="col-2 formas-pagamento"><img src="./componentes/icones/icon-pix2.png" class="imagem-pagamento"></div>
+                        <div class="col-9 formas-pagamento">PIX</div>
+                    </div>
+                    <div class="row col-12 mx-0 p-2">
+                        <input  class="col-1  formas-pagamento" type="radio" name="forma-pagamento" value="boleto">
+                        <div class="col-2 formas-pagamento"><img src="./componentes/icones/icone-codigo-de-barras2.png" class="imagem-pagamento"></div>
+                        <div class="col-9 formas-pagamento">BOLETO</div>
+                    </div>
+                </div>
+            </div>
+            <!-- fim formas de pagamento -->
+            <!-- inicio finalização compra -->
+            <div class="col-12 col-md-12 col-lg-4 d-flex justify-content-center m-0  my-4 p-0">
+                <div class="col-11 container-pagamento">
+                    <div class="row col-12 mx-0 p-2 div-pagamento">
+                        <div class="col-2"><img class="formas-pagamento"src="componentes/icones/icon-cupom.png" width=50px height=40px></div>
+                        <div class="col-10">ADICIONAR UM CUPOM DE DESCONTO</div>
+                        <div class="row col-12 mx-0 my-3 justify-content-around">
+                            <input class="col-7" type="text" id="cupom" value="" placeholder="Insira o código">
+                            <button type="submit" class="col-4">Salvar</button>
+                        </div>
+                    </div>
+                    <div class="row col-12 mx-0 my-2 p-2 div-pagamento">
+                        <div class="texto-pagamento my-2">TERMO DE ALGO</div>
+                        <p class="texto-pagamento my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id scelerisque risus, at dapibus diam. Cras vel varius odio. Integer eu lectus nisi. In hac habitasse platea dictumst. Fusce at ligula in neque dictum auctor sed quis nisi. Integer quis interdum ligula, at tincidunt neque. Proin consequat lobortis odio vitae facilisis.</p>
+                        <input  class="col-1 formas-pagamento radio-pagamento" type="radio" name="aceite-termo" value="aceite-termo">
+                        <p class="col-11">EU ACEITO OS TERMOS E CONDIÇÕES</p>
+                    </div>
+                    <div class="row col-12 mx-0 p-2">
+                    </div>
+                </div>
+            </div>
+            <!-- fim finalização compra -->
+        </div>
+    </section>
+    <!-- fim pagamento -->
+    <!-- inicio footer -->
+    <footer class="container d-flex justify-content-center mw-100 px-0">
+        <div class="row col-12 justify-content-around py-3">
+            <div class="row d-none d-lg-flex col-lg-8 justify-content-around">
+                <!-- primeira coluna -->
+                <div class="col-4">
+                    <div class="texto-footer">INSTITUCIONAL</div>
+                    <div class="texto-footer">PARCEIROS</div>
+                    <div class="texto-footer">TERMOS DE SERVIÇO</div>
+                    <div class="texto-footer">POLÍTICA DE PRIVACIDADE</div>
+                    <div class="texto-footer">POLÍTICA DE COOKIES</div>
+                </div>
+                <!-- segunda coluna -->
+                <div class="col-4">
+                    <div class="texto-footer">COMO COMPRAR</div>
+                    <div class="texto-footer">COMO ME CADASTRAR</div>
+                    <div class="texto-footer">PAGAMENTOS</div>
+                    <div class="texto-footer">DEVOLUÇÕES</div>
+                    <div class="texto-footer">F.A.Q</div>
+                </div>
+                <!-- terceira coluna -->
+                <div class="col-4">
+                    <div class="texto-footer"><a class="link-footer" href="">LOGIN</a></div>
+                    <div class="texto-footer"><a class="link-footer" href="">CADASTRE-SE</a></div>
+                    <div class="texto-footer"><a class="link-footer" href="">RECUPERAR SENHA</a></div>
+                    <div class="texto-footer"><a class="link-footer" href="">FALE CONOSCO</a></div>
+                </div>
+                <!-- dados da empresa -->
+                <div class="row col-12 justify-content-center pt-3">© MVP SKINS 2021 | CNPJ: 61.585.865/0001-51 |  TODOS OS DIREITOS RESERVADOS</div>
+            </div>
+            <!-- quarta coluna  -->
+            <div class="col-12 col-lg-4">
+                <!-- redes sociais -->
+                <div class="row col-12 justify-content-center pb-1 mx-0">SIGA A GENTE</div>
+                <div class="row col-12 justify-content-center justify-content-lg-around py-1">
+                    <div class="col-2 col-lg-3 texto-footer">
+                        <a class="link-footer" href="https://www.facebook.com/" target="_blank">
+                            <img src="./componentes/icones/icon-facebook.png" alt="ícone do facebook" class="icon-footer">
+                        </a>
+                    </div>
+                    <div class="col-2 col-lg-3 texto-footer">
+                        <a class="link-footer" href="https://twitter.com/" target="_blank">
+                            <img src="./componentes/icones/icon-twitter.png" alt="ícone do twitter" class="icon-footer">
+                        </a>
+                    </div>
+                    <div class="col-2 col-lg-3 texto-footer">
+                        <a class="link-footer" href="https://discord.com/" target="_blank">
+                        <img src="./componentes/icones/icon-discord.png" alt="ícone do discord" class="icon-footer">
+                        </a>
+                    </div>
+                    <div class="col-2 col-lg-3 texto-footer">
+                        <a class="link-footer" href="https://www.instagram.com/" target="_blank">
+                            <img src="./componentes/icones/icon-instagram.png" alt="ícone do instagram" class="icon-footer">
+                        </a>
+                    </div>
+                </div>
+                <hr class="d-none d-lg-flex col-lg-12 justify-content-center">
+                <!-- metodos de pagamento -->
+                <div class="row d-none d-lg-flex col-12 justify-content-center pb-1 mx-0">MÉTODOS DE PAGAMENTO</div>
+                <div class="row d-none d-lg-flex col-lg-12 justify-content-around py-1">
+                    <div class="col-lg-3 texto-footer"><img src="./componentes/icones/icon-mastercard.png" alt="ícone do mastercard" class="icon-footer"></div>
+                    <div class="col-lg-3 texto-footer"><img src="./componentes/icones/icon-visa.png" alt="ícone da visa" class="icon-footer"></div>
+                    <div class="col-lg-3 texto-footer"><img src="./componentes/icones/icon-codigo-de-barras.png" alt="ícone do boleto" class="icon-footer"></div>
+                    <div class="col-lg-3 texto-footer"><img src="./componentes/icones/icon-pix.png" alt="ícone do pix" class="icon-footer"></div>
+                </div>
+                <div class="row d-lg-none col-12 justify-content-center py-3 mx-0">
+                    <div class="texto-footer"><a class="link-footer" href="">LOGIN</a></div><br>
+                    <div class="texto-footer"><a class="link-footer" href="">CADASTRE-SE</a></div><br>
+                    <div class="texto-footer"><a class="link-footer" href="">RECUPERAR SENHA</a></div><br>
+                    <div class="texto-footer"><a class="link-footer" href="">FALE CONOSCO</a></div><br>
+                </div>
+                <div class="row d-lg-none col-12 justify-content-center py-3 mx-0 text-center">© MVP SKINS 2021 | CNPJ: 61.585.865/0001-51 |  TODOS OS DIREITOS RESERVADOS</div>
+            </div>
+        </div>
+    </footer>
+    <!-- fim footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
