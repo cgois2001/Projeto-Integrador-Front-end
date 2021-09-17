@@ -47,20 +47,28 @@
     text-align: center;
     font-size: 1rem;
     color: #EFEFEF;
+    background-color: #fd491200;
+    height: 50px;
 } 
 
 .btn-mvp:hover, .btn-mvp:focus-within {
-    box-shadow: none !important;  
+    box-shadow: none ;  
     transition: 0.5s;
-    background-color: #28004F !important; /* ALTERAR O BACKGROUND-COLOR SE ADICIONAR EM UMA DIV COM COR DIFERENTE DE #181818  */
-    color: #FD4712 !important;
-    border-color: #FD4712 !important;
+    background-color: #EFEFEF ; /* ALTERAR O BACKGROUND-COLOR SE ADICIONAR EM UMA DIV COM COR DIFERENTE DE #181818  */
+    color: #FD4712 ;
+    border-color: #FD4712;
     border-width: 2px;
 }
 
-.btn-login:hover, .btn-login {
-    background-color: #EFEFEF !important;
+ .btn-cadastrar{
+    background-color: #FD4712 !important;
+    color: #fff !important;
+} 
+.btn-cadastrar:hover{
+    background-color: #181818 !important;
+    color:#FD4712 !important;
 }
+
 
 /* Estilos dos botões principais */
 .btn-primario-mvp {
@@ -107,4 +115,26 @@ background-image: linear-gradient(to bottom, #0F1B45, #0f1b4575 );
 
 .redefinicao-senha {
     text-align: justify;
+}
+
+.link-header{
+    color:black;
+}
+.link-header:hover{
+    color:#FD4712;
+}
+.nav-principal{
+    background-color: #EFEFEF;
+
+}
+
+.botoes-header-d-flex{
+    display:flex;
+    flex-wrap: nowrap;
+
+}
+@media(max-width:855px){
+    .categorias{
+        display:none;
+    }
 }
