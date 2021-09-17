@@ -1,0 +1,28 @@
+/* Estilo de todos os botões */
+.btn-mvp {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem;
+    color: #EFEFEF;
+} 
+
+.btn-mvp:hover, .btn-mvp:focus-within {
+    box-shadow: none !important;  
+    transition: 0.5s;
+    background-color: #28004F !important; /* ALTERAR O BACKGROUND-COLOR SE ADICIONAR EM UMA DIV COM COR DIFERENTE DE #181818  */
+    color: #FD4712 !important;
+    border-color: #FD4712 !important;
+    border-width: 2px;
+}
+
+/* Estilos dos botões principais */
+.btn-primario-mvp {
+    border-color: #FD4712;
+    background-color: #FD4712;
+}
+
+/* Estilo dos botões secundários */
+.btn-secundario-mvp {
+    border-color: #FD4712;
+}
