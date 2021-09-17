@@ -1,3 +1,4 @@
+/* Container do card  */
 .card-produto-mvp {
     align-items: center;
     background-color: #766289;
@@ -9,21 +10,25 @@ h3 {
     color: #EFEFEF;
 }
 
+/* Paragráfo do card  */
 .card-produto-mvp p {
     font-family: 'Chakra Petch', sans-serif;
 }
 
+/* Preço de promoção  */
 .promocao-de-preco{
     font-size: .8rem;
     opacity: .7;
     text-decoration: line-through;
 }
 
+/* Preço de venda  */
 .preco {
     font-size: 1rem;
     font-weight: 900;
 }
 
+/* Linha central do card  */
 .card-linha {
     background-color: #28004F;
     width: 100%;
@@ -31,7 +36,7 @@ h3 {
 }
 
 
-
+/* MEDIAS QUERIES  */
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
