@@ -229,159 +229,150 @@
   
     <!-- Início do body  -->
     <!-- Início do container principal -->
-    <div class="px-4 px-lg-0">    
-      <div class="pb-5">
-        <div class="container">
-          <div class="row mx-0">
-            <div class="p-2 mb-5 row container-carrinho">
-              <!-- Início da lateral do carrinho -->
-              <div class="cupom-banner-carrinho py-3 col-lg-12 col-xl-4 ">
-                <!-- Início card de carteira virtual do carrinho  -->
-                <div class="card carteira-virtual">
-                  <div class="card-body">
-                    <h3 class="card-title">Carteira virtual</h3>
-                    <p class="card-text">Você não possui saldo creditado na sua conta. Solicite um novo depósito pelo botão abaixo.</p>
-                    <!-- Button de segunda importância  -->
-                    <button type="button" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp">Adicionar saldo</button>
-                  </div>
-                </div>
-                <!-- Fim card de carteira virtual do carrinho  -->
-                <!-- Início banner lateral do carrinho  -->
-                <div class="banner-carrinho row">
-                </div>
-                <!-- Fim banner lateral do carrinho  -->
-              </div>
-              <!-- Fim da lateral do carrinho -->
-              
-              <!-- Início da listagem de produtos no carrinho -->
-              <div class="table-responsive carrinho py-3 mx-0 col-11 col-sm-11 col-md-10 col-lg-10 col-xl-8">
-                <table class="table container-itens col-md-12 col-lg-12">
-                  <thead>
-                    <tr>
-                      <th scope="col" class="border-0">
-                        <div class="p-2 px-3 text-uppercase titulo-carrinho">Produto</div>
-                      </th>
-                      <th scope="col" class="border-0">
-                        <div class="py-2 text-uppercase titulo-carrinho">Descrição</div>
-                      </th>
-                      <th scope="col" class="border-0">
-                        <div class="py-2 text-uppercase titulo-carrinho">Preço</div>
-                      </th>
-                      <th scope="col" class="border-0">
-                        <div class="py-2 text-uppercase titulo-carrinho">Excluir</div>
-                      </th>
-                    </tr>
-                  </thead>
-
-                  <!-- =====================PRIMEIRO PRODUTO===================== -->
-                  <tr class="item mx-0">
-                    <th scope="row" class="border-0">
-                      <div class="p-2 container-img-item">
-                        <img src="/images/produtos/adaga-marcara-urbana.png" alt="" class="img-fluid rounded shadow-sm img-item">
-                      </div>
-                    </th>
-                    <td class="col-5">
-                      <div class="ml-3 d-inline-block align-middle container-descricao-item">
-                        <span class="text-muted font-italic">Categoria: adagas</span>
-                        <h3 class="mb-0"> <a href="#" class="d-inline-block align-middle">Adaga sombria | Aço de Damasco</a></h3>
-                        <span class="text-muted font-italic">Raridade: Oculto</span>
-                      </div>
-                    </td>
-                    <td class="border-0 align-middle col-2 preco">R$473,00</td>
-                    <td class="border-0 align-middle col-2 trash-item "><a href="#"><i class="fa fa-trash"><img src="/componentes/icones/icon-lixeira.png" alt=""></i></a></td>
-                  </tr>
-
-                  <!-- =====================SEGUNDO PRODUTO===================== -->
-                  <tr class="item">
-                    <th scope="row" class="border-0">
-                      <div class="p-2 container-img-item">
-                        <img src="/images/produtos/luva-abate.png" alt="" class="img-fluid rounded shadow-sm img-item">
-                      </div>
-                    </th>
-                    <td class="col-5">
-                      <div class="ml-3 d-inline-block align-middle">
-                        <span class="text-muted font-italic ">Categoria: luvas</span>
-                        <h3 class="mb-0"> <a href="#" class="d-inline-block align-middle">LUVA ESPORTIVA | ABATE</a></h3>
-                        <span class="text-muted font-italic ">Raridade: Extraordinário</span>
-                      </div>
-                    </td>
-                    <td class="border-0 align-middle col-2 preco">R$2.949,00</td>
-                    <td class="border-0 align-middle col-2 trash-item "><a href="#"><i class="fa fa-trash"><img src="/componentes/icones/icon-lixeira.png" alt=""></i></a></td>
-                  </tr>
-
-                  <!-- =====================TERCEIRO PRODUTO===================== -->
-                  <tr class="item">
-                    <th scope="row" class="border-0">
-                      <div class="p-2 container-img-item">
-                        <img src="/images/produtos/aug-momento.png" alt="" class="img-fluid rounded shadow-sm img-item">
-                      </div>
-                    </th>
-                    <td class="col-5">
-                      <div class="ml-3 d-inline-block align-middle">
-                        <span class="text-muted font-italic">Categoria: rifles</span>
-                        <h3 class="mb-0"> <a href="#" class="d-inline-block align-middle">RIFLE AUG | MOMENTOS</a></h3>
-                        <span class="text-muted font-italic">Raridade: Secreto</span>
-                      </div>
-                    </td>
-                    <td class="border-0 align-middle col-2 preco">R$92,00</td>
-                    <td class="border-0 align-middle col-2 trash-item "><a href="#"><i class="fa fa-trash"><img src="/componentes/icones/icon-lixeira.png" alt=""></i></a></td>
-                  </tr>
-
-                </table>
-                <!-- Fim da listagem de proodutos no carrinho -->
-
-                <!-- Início da div de preços  -->
-                <div class="container preco-final py-3">
-                  <div class="container-cupom-desconto p-3 col-9">
-                    <div class="cupom-titulo row px-3">
-                      <p class="m-0">Cupom de desconto</p>
-                    </div>
-
-                    <div class="input-cupom row px-2"> 
-                      <div class="col-8">
-                        <input type="text" class="form-control caixas-de-insercao login" aria-describedby="cupom" placeholder="Digite seu cupom">
-                      </div>
-
-                      <div class="col-4">
-                        <!-- Button de segunda importância  -->
-                        <button type="button" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp ml-2">Aplicar</button>
-                      </div>
-                    </div>
-
-                    <div class="col-6 cupom">
-
-                    </div>
-                  </div>
-
-                    <div class="container-preco p-4 col-3">
-                      <div class="pagamento row">
-                        <p class="m-auto">Total</p>
-                      </div>
-
-                      <div class="total row">
-                          <p class="m-auto">R$1.448,99</p>
-                      </div>
-                    </div>
-                </div>
-                <!-- Fim da div de preços  -->
-
-                <!-- Início da div com botões -->
-                <div class="botoes-carrinho py-3 px-0">
-                  <!-- Button de segunda importância  -->
-                  <button type="button" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp btn-continuar-comprando mx-5"><a href="/Home/home.html">Continuar comprando</a></button>
-            
-                  <!-- Button de primeira importância -->
-                  <button type="button" class="btn btn-primary btn-mvp btn-primario-mvp"><a href="/pagamento.html">Finalizar compra</a></button>
-                </div>
-                <!-- Fim da div com botões -->
-              </div>
-
-
-
+    <div class="container">
+      <div class="py-5 m-auto row">
+        <!-- Início da lateral do carrinho -->
+        <div class="cupom-banner-carrinho col-lg-12 col-xl-4 ">
+          <!-- Início card de carteira virtual do carrinho  -->
+          <div class="card carteira-virtual">
+            <div class="card-body">
+              <h3 class="card-title">Carteira virtual</h3>
+              <p class="card-text">Você não possui saldo creditado na sua conta. Solicite um novo depósito pelo botão abaixo.</p>
+              <!-- Button de segunda importância  -->
+              <button type="button" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp">Adicionar saldo</button>
             </div>
-          </div>    
+          </div>
+          <!-- Fim card de carteira virtual do carrinho  -->
+          <!-- Início banner lateral do carrinho  -->
+          <div class="banner-carrinho row">
+          </div>
+          <!-- Fim banner lateral do carrinho  -->
         </div>
-      </div>
+        <!-- Fim da lateral do carrinho -->
+        
+        <!-- Início da listagem de produtos no carrinho -->
+        <div class="table-responsive carrinho py-3 mx-0 col-11 col-sm-11 col-md-10 col-lg-10 col-xl-8">
+          <table class="table container-itens col-md-12 col-lg-12">
+            <thead>
+              <tr>
+                <th scope="col" class="border-0">
+                  <div class="p-2 px-3 text-uppercase titulo-carrinho">Produto</div>
+                </th>
+                <th scope="col" class="border-0">
+                  <div class="py-2 text-uppercase titulo-carrinho">Descrição</div>
+                </th>
+                <th scope="col" class="border-0">
+                  <div class="py-2 text-uppercase titulo-carrinho">Preço</div>
+                </th>
+                <th scope="col" class="border-0">
+                  <div class="py-2 text-uppercase titulo-carrinho">Excluir</div>
+                </th>
+              </tr>
+            </thead>
+
+            <!-- =====================PRIMEIRO PRODUTO===================== -->
+            <tr class="item mx-0">
+              <th scope="row" class="border-0">
+                <div class="p-2 container-img-item">
+                  <img src="/images/produtos/adaga-marcara-urbana.png" alt="" class="img-fluid rounded shadow-sm img-item">
+                </div>
+              </th>
+              <td class="col-5">
+                <div class="ml-3 d-inline-block align-middle container-descricao-item">
+                  <span class="text-muted font-italic">Categoria: adagas</span>
+                  <h3 class="mb-0"> <a href="#" class="d-inline-block align-middle">Adaga sombria | Aço de Damasco</a></h3>
+                  <span class="text-muted font-italic">Raridade: Oculto</span>
+                </div>
+              </td>
+              <td class="border-0 align-middle col-2 preco">R$473,00</td>
+              <td class="border-0 align-middle col-2 trash-item "><a href="#"><i class="fa fa-trash"><img src="/componentes/icones/icon-lixeira.png" alt=""></i></a></td>
+            </tr>
+
+            <!-- =====================SEGUNDO PRODUTO===================== -->
+            <tr class="item">
+              <th scope="row" class="border-0">
+                <div class="p-2 container-img-item">
+                  <img src="/images/produtos/luva-abate.png" alt="" class="img-fluid rounded shadow-sm img-item">
+                </div>
+              </th>
+              <td class="col-5">
+                <div class="ml-3 d-inline-block align-middle">
+                  <span class="text-muted font-italic ">Categoria: luvas</span>
+                  <h3 class="mb-0"> <a href="#" class="d-inline-block align-middle">LUVA ESPORTIVA | ABATE</a></h3>
+                  <span class="text-muted font-italic ">Raridade: Extraordinário</span>
+                </div>
+              </td>
+              <td class="border-0 align-middle col-2 preco">R$2.949,00</td>
+              <td class="border-0 align-middle col-2 trash-item "><a href="#"><i class="fa fa-trash"><img src="/componentes/icones/icon-lixeira.png" alt=""></i></a></td>
+            </tr>
+
+            <!-- =====================TERCEIRO PRODUTO===================== -->
+            <tr class="item">
+              <th scope="row" class="border-0">
+                <div class="p-2 container-img-item">
+                  <img src="/images/produtos/aug-momento.png" alt="" class="img-fluid rounded shadow-sm img-item">
+                </div>
+              </th>
+              <td class="col-5">
+                <div class="ml-3 d-inline-block align-middle">
+                  <span class="text-muted font-italic">Categoria: rifles</span>
+                  <h3 class="mb-0"> <a href="#" class="d-inline-block align-middle">RIFLE AUG | MOMENTOS</a></h3>
+                  <span class="text-muted font-italic">Raridade: Secreto</span>
+                </div>
+              </td>
+              <td class="border-0 align-middle col-2 preco">R$92,00</td>
+              <td class="border-0 align-middle col-2 trash-item "><a href="#"><i class="fa fa-trash"><img src="/componentes/icones/icon-lixeira.png" alt=""></i></a></td>
+            </tr>
+
+          </table>
+          <!-- Fim da listagem de proodutos no carrinho -->
+
+          <!-- Início da div de preços  -->
+          <div class="container preco-final py-3">
+            <div class="container-cupom-desconto p-3 col-9">
+              <div class="cupom-titulo row px-3">
+                <p class="m-0">Cupom de desconto</p>
+              </div>
+
+              <div class="input-cupom row px-2"> 
+                <div class="col-8">
+                  <input type="text" class="form-control caixas-de-insercao login" aria-describedby="cupom" placeholder="Digite seu cupom">
+                </div>
+
+                <div class="col-4">
+                  <!-- Button de segunda importância  -->
+                  <button type="button" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp ml-2">Aplicar</button>
+                </div>
+              </div>
+
+              <div class="col-6 cupom">
+
+              </div>
+            </div>
+
+              <div class="container-preco p-4 col-3">
+                <div class="pagamento row">
+                  <p class="m-auto">Total</p>
+                </div>
+
+                <div class="total row">
+                    <p class="m-auto">R$1.448,99</p>
+                </div>
+              </div>
+          </div>
+          <!-- Fim da div de preços  -->
+
+          <!-- Início da div com botões -->
+          <div class="botoes-carrinho py-3 px-0">
+            <!-- Button de segunda importância  -->
+            <button type="button" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp btn-continuar-comprando mx-5"><a href="/Home/home.html">Continuar comprando</a></button>
+      
+            <!-- Button de primeira importância -->
+            <button type="button" class="btn btn-primary btn-mvp btn-primario-mvp"><a href="/pagamento.html">Finalizar compra</a></button>
+          </div>
+          <!-- Fim da div com botões -->
+        </div>
+      </div>  
     </div>
     <!-- Fim do carrinho de compras -->
 
