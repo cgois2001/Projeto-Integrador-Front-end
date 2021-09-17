@@ -10,20 +10,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Estilo MVP -->
     <link rel="stylesheet" href="/css/estilo.css">
-    <link rel="stylesheet" href="/css/carrinho.css">
-    <link rel="stylesheet" href="/componentes/header/header.css">
-    <link rel='stylesheet' href="/componentes/modal-login/login.css">
     <link rel="stylesheet" href="/componentes/botoes/botoes.css">
     <link rel="stylesheet" href="/componentes/footer/footer.css">
     <link rel="stylesheet" href="/componentes/formularios/styles.css">
+    <link rel='stylesheet' href="./componentes/header/header.css">
+    <link rel='stylesheet' href="./componentes/modal-login/login.css">
+    <link rel="stylesheet" href="/css/carrinho.css">
 
     <title>MVP SKINS | CARRINHO</title>
     <link rel="shortcut icon" type="imagex/png" href="/images/ID/image (2) (1).png">
   </head>
 
   <body>
-  <!-- Início da header -->
-  <header class="row m-0 p-0">
+    <!-- INICIO HEADER -->
+  <header class="row justify-content-around">
     <div class="topo-header row px-3">
       <!-- INÍCIO LOGO  -->
       <div class="logo col-4 col-xs-4 col-md-2 col-lg-2 col-xl-3">
@@ -39,21 +39,21 @@
       </div>
       <!-- FIM BARRA DE PESQUISA -->
 
-      <!--BOTÃO DO MODAL-->
+      <!--BOTÃO DO LOGIN-->
       <div class="botoes-menu col-12 col-xs-12 col-md-4 col-lg-4 col-xl-3">
-        <button type="button" class="btn btn-primary btn-mvp btn-secundario-mvp btn-login" data-bs-toggle="modal"
+        <button type="button" class="btn btn-primary btn-mvp btn-secundario-mvp btn-login d-flex justify-content-center align-items-center" data-bs-toggle="modal"
           data-bs-target="#exampleModal">
           Login
         </button>
-      <!--FIM DO BOTÃO DO MODAL-->
+      <!--FIM DO BOTÃO DO LOGIN-->
       
-      <!-- BOTÃO DE LOGIN  -->
-        <button type="reset" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp btn-cadastrar"
+      <!-- BOTÃO DE CADASTRO  -->
+        <button type="reset" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp btn-cadastrar d-flex justify-content-center align-items-center"
           data-bs-dismiss="modal">
           Cadastre-se
         </button>
       </div>
-      <!-- FIM BOTÃO DE LOGIN -->
+      <!-- FIM BOTÃO DE CADASTRO -->
     </div>
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -118,7 +118,7 @@
               <div class="modal-footer d-flex flex-row justify-content-between">
                 <div class="col-2"></div>
                 <div class="btn btn-steam d-flex align-items-center col-6">
-                  <img class="col-2" src="/componentes/icones/icon-steam.png">
+                  <img class="col-2" src="/images/icones/icon-steam.png">
                   <a class="link-steam col-10" href="https://steamcommunity.com/login">LOGIN COM
                     STEAM</a>
                 </div>
@@ -223,9 +223,9 @@
 
       </ul>
     </div>
-    <!-- FIM NAVBAR -->
+  <!-- FIM NAVBAR -->
   </header>
-  <!-- Fim do header  -->
+  <!-- FIM HEADER -->
   
     <!-- Início do body  -->
     <!-- Início do container principal -->
