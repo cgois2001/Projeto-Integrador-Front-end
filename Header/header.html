@@ -8,37 +8,214 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel='stylesheet' href="./css/header.css">
+  <link rel='stylesheet' href="/componentes/modal-login/login.css">
+
 </head>
 
 <body>
-    <!-- INICIO HEADER -->
-    <header>
-        <header class = "py-4">
-          <div class = "container-fluid">
-            <div class = "row align-items-center">
-              <div class = "col lg-2 col-md-6 col-xs-12">
-                <img src = "./images/logo-final-2-fonte-preta(1).png" width="130" alt="MVP">
-                
+  <!-- INICIO HEADER -->
+  <header class="py-4">
+
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-around">
+        <div class="col-lg-2 col-md-3 col-xs-3">
+          <img src="./images/logo-final-2-fonte-preta(1).png" width="130" alt="MVP">
+
+        </div>
+        <div class="col-lg-6 col-md-5 col-xs-3 my-3">
+          <form class="d-flex">
+            <input type="search" class="input-search" placeholder="O que você esta procurando?" class="ps-2" />
+          </form>
+        </div>
+        <!--BOTÃO DO MODAL-->
+
+        <div class="col-lg-4 col-md-4 col-xs-6 align-items-center botoes-header-d-flex">
+          <button type="button" class="btn btn-primary btn-mvp btn-secundario-mvp btn-login" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Login
+          </button>
+          <!-- </div> -->
+          <!-- <div class="col-lg-2 col-md-3 col-xs-3  align-items-center"> -->
+          <button type="reset" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp btn-cadastrar"
+            data-bs-dismiss="modal">
+            Cadastre-se
+          </button>
+        </div>
+        <!--FIM DO BOTÃO DO MODAL-->
+        <!-- MODAL -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title  login-title" id="exampleModalLabel">FAÇA LOGIN</h5>
               </div>
-              <div class="col lg-6 col-md-6 my-3">
-                <form class="d-flex">
-                    <input type="search" class="input-search" placeholder="O que você esta procurando?" class="ps-2" />
-                </form>
-                
+              <div class="modal-body">
+                <div class="container d-flex flex-column">
+                  <!--FORMULÁRIO DE LOGIN-->
+                  <form>
+                    <div class="mb-3">
+                      <label for="" class="form-label login-title">E-mail</label>
+                      <input type="email" class="form-control caixas-de-insercao login" aria-describedby="emailHelp"
+                        placeholder="Digite seu e-mail">
+                    </div>
+                    <div class="mb-3">
+                      <label for="" class="form-label login-title">Senha</label>
+                      <input type="password" class="form-control caixas-de-insercao login"
+                        placeholder="Digite sua senha">
+
+                      <!--BOTÃO DO COLLAPSE (ESQUECI A SENHA)-->
+                      <button class="links-login" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseWidthExample" aria-expanded="false"
+                        aria-controls="collapseWidthExample">
+                        Esqueci a senha
+                      </button>
+                      <!--FIM DO BOTÃO DO COLLAPSE-->
+                      <!--COLLAPSE (ESQUECI A SENHA)-->
+                      <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                        <div class="card card-body redefinir-senha" style="width: 420px;">
+                          Esqueceu sua senha? Fique tranquilo, digite seu e-mail aqui em baixo para te
+                          enviarmos um e-mail com o link pra redefinição da sua senha:
+                          <p></p>
+                          <form>
+                            <div class="mb-3 d-flex justify-content-start">
+                              <input type="email" class="form-control caixas-de-insercao login"
+                                aria-describedby="emailHelp" placeholder="Digite seu e-mail">
+                            </div>
+                            <div class="d-flex flex-column justify-content-end">
+                              <button type="button" class="btn btn-primary btn-mvp btn-primario-mvp btn-logar"
+                                data-bs-toggle="collapse" data-bs-target="#collapseWidthExample1" aria-expanded="false"
+                                aria-controls="collapseWidthExample1">
+                                ENVIAR
+                              </button>
+                              <div class="collapse collapse-horizontal" id="collapseWidthExample1">
+                                <div class="card card-body redefinir-senha" style="width: 400px;">
+                                  Já te enviamos o e-mail, cheque sua caixa de entrada para
+                                  prosseguir com a redefinição da sua senha.
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <!--FIM DO COLLAPSE (ESQUECI A SENHA)-->
+                    </div>
+                  </form>
+                  <!--FIM DO FORMULÁRIO DE LOGIN-->
+                  <!--BOTÕES DO FORMULÁRIO-->
+                  <div class="modal-footer d-flex flex-row justify-content-between">
+                    <div class="col-2"></div>
+                    <div class="btn btn-steam d-flex align-items-center col-6">
+                      <img class="col-2" src="/componentes/icones/icon-steam.png">
+                      <a class="link-steam col-10" href="https://steamcommunity.com/login">LOGIN COM
+                        STEAM</a>
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-5 d-flex flex-column justify-content-start">
+                      <button type="reset" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp btn-cancelar"
+                        data-bs-dismiss="modal">
+                        CANCELAR
+                      </button>
+                    </div>
+                    <div class="col-6 d-flex flex-column justify-content-end">
+                      <button type="submit" class="btn btn-primary btn-mvp btn-primario-mvp btn-logar">
+                        LOGIN
+                      </button>
+                    </div>
+                    <div class="sem-conta">
+                      Não possui conta?
+                      <a class="links-login" href="#"> Cadastre-se</a>
+                    </div>
+                  </div>
+                  <!--FIM DOS BOTÕES DO FORMULÁRIO-->
+                </div>
+              </div>
             </div>
-    </header>
-                <!-- FIM HEADER -->
-                
-                
-                  
-                    
-                    
+          </div>
+        </div>
+        <!--FIM DO MODAL-->
 
-                 
+        <!-- INICIO NAVBAR -->
+        <div class="row">
+          <ul class="nav justify-content-around align-items-center nav-principal">
+            <li class="nav-item link-header">
+              <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <img src="./images/icon-menu.png" width="30" height="30">
+              </a>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Titulo(Opcional)</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div>
+                    <ul class="list-group">
+                      <li class="list-group-item d-flex justify-content-between"> Facas
+                        <img src="./images/icon-faca.png" width="30" height="30">
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between">Luvas
+                        <img src="./images/icon-luva.png" width="30" height="30">
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between">Caixas
+                        <img src="./images/icon-caixa.png" width="30" height="30">
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between">Agentes
+                        <img src="./images/icon-agente.png" width="30" height="30">
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between">Armas
+                        <img src="./images/icon-arma.png" width="30" height="30">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item categorias">
+              <a class="nav-link link-header" href="#">
+                <img src="./images/icon-arma.png" width="30" height="30"> Armas
+              </a>
+            </li>
+            <li class="nav-item categorias">
+              <a class="nav-link link-header" href="#">
+                <img src="./images/icon-faca.png" width="30" height="30"> Facas
+              </a>
+            </li>
+            <li class="nav-item categorias">
+              <a class="nav-link link-header" href="#">
+                <img src="./images/icon-luva.png" width="30" height="30"> Luvas
+              </a>
+            </li>
+            <li class="nav-item categorias">
+              <a class="nav-link link-header" href="#">
+                <img src="./images/icon-caixa.png" width="30" height="30"> Caixas
+              </a>
+            </li>
+            <li class="nav-item categorias">
+              <a class="nav-link link-header" href="#">
+                <img src="./images/icon-agente.png" width="30" height="30"> Agentes
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-header" href="#">Favoritos
+                <img src="./images/icon-coracao.png" width="30" height="30">
+              </a>
+            </li>
 
+            <li class="nav-item">
+              <a class="nav-link link-header" href="#">Carrinho
+                <img src="./images/icon-carrinho.png" width="30" height="30">
+              </a>
+            </li>
 
-
-
-
-
+          </ul>
+        </div>
+        <!-- FIM NAVBAR -->
+  </header>
+  <!-- FIM HEADER -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
 </body>
+
+</html>
