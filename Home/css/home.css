@@ -32,10 +32,8 @@ header{
     width: 95%;
 }
 
-.navbar-brand {
-    display: none;
-}
-.custom-menu {
+
+/* .custom-menu {
     background-color: #28004F;
     max-height: 35px;
 }
@@ -46,6 +44,172 @@ header{
 .nav-item a{
     width: 100%;
     height: 25px;
+} */
+
+
+footer{
+    background-color: #181818;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.texto-footer{
+    text-align: center;
+}
+
+.icon-footer{
+    height:30px;
+    width:30px;
+}
+
+.link-footer{
+    color:#ffffff;
+    text-decoration: none;
+}
+
+.link-footer:hover{
+    color:#ffffff;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.caixas-de-insercao::placeholder {
+    color:black;
+}
+
+.caixas-de-insercao {
+    background-color: #EFEFEF;
+    opacity: 0.8;
+}
+
+.caixas-de-insercao:focus {
+    box-shadow: none;
+    border-color: black;
+}
+
+.login {
+    color: black;
+}
+
+.login::placeholder {
+    color:black;
+}
+
+.links-login {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    background-color: white;
+    border: none;
+}
+
+.links-login:hover {
+    transition: 0.5s;
+    color: #FD4712;
+}
+
+.sem-conta {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    text-align: left;
+}
+
+/* Estilo de todos os botões */
+.btn-mvp {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem;
+    color: #EFEFEF;
+    background-color: #fd491200;
+    height: 50px;
+} 
+
+.btn-mvp:hover, .btn-mvp:focus-within {
+    box-shadow: none ;  
+    transition: 0.5s;
+    background-color: #EFEFEF ; /* ALTERAR O BACKGROUND-COLOR SE ADICIONAR EM UMA DIV COM COR DIFERENTE DE #181818  */
+    color: #FD4712 ;
+    border-color: #FD4712;
+    border-width: 2px;
+}
+
+ .btn-cadastrar{
+    background-color: #FD4712 !important;
+    color: #fff !important;
+} 
+.btn-cadastrar:hover{
+    background-color: #181818 !important;
+    color:#FD4712 !important;
 }
 
 
+/* Estilos dos botões principais */
+.btn-primario-mvp {
+    border-color: #FD4712;
+    background-color: #FD4712;
+}
+
+/* Estilo dos botões secundários */
+.btn-secundario-mvp {
+    background-color: rgba(1, 1, 1, 0);
+    border-color: #FD4712;
+    color:#FD4712;
+}
+
+.link-steam {
+    color: white;
+    text-decoration: none;
+}
+
+.link-steam:hover {
+    color: white;
+}
+
+.login-title {
+    color:#FD4712;
+    font-weight: bold;
+}
+
+.btn-steam {
+background-image: linear-gradient(to bottom, #0F1B45, #0f1b4575 );
+}
+
+.btn-logar:hover {
+    background-color: white !important;
+    border-color: #28004f !important;
+    color: #28004f !important;
+}
+
+.btn-cancelar:hover {
+    background-color: white !important;
+    border-color: #28004f !important;
+    color: #28004f !important;
+}
+
+.redefinicao-senha {
+    text-align: justify;
+}
+
+.link-header{
+    color:black;
+}
+.link-header:hover{
+    color:#FD4712;
+}
+.nav-principal{
+    background-color: #EFEFEF;
+
+}
+
+.botoes-header-d-flex{
+    display:flex;
+    flex-wrap: nowrap;
+
+}
+@media(max-width:855px){
+    .categorias{
+        display:none;
+    }
+}

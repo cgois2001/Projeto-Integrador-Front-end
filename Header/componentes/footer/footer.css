@@ -1,0 +1,25 @@
+footer{
+    background-color: #181818;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.texto-footer{
+    text-align: center;
+}
+
+.icon-footer{
+    height:30px;
+    width:30px;
+}
+
+.link-footer{
+    color:#ffffff;
+    text-decoration: none;
+}
+
+.link-footer:hover{
+    color:#ffffff;
+    opacity: 0.75;
+    cursor: pointer;
+}

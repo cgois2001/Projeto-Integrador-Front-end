@@ -1,6 +1,3 @@
-
-
-
 .caixas-de-insercao::placeholder {
     color:black;
 }
@@ -136,19 +133,8 @@ background-image: linear-gradient(to bottom, #0F1B45, #0f1b4575 );
     flex-wrap: nowrap;
 
 }
-
-.container-fluid{
-    width:100%;
-    height: 90%;
-    background-color: #181818;
-}
 @media(max-width:855px){
     .categorias{
         display:none;
     }
 }
-
-
-
-
-
