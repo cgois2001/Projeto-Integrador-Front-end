@@ -28,6 +28,15 @@ body{
     margin-bottom:50px;
 }
 
+.links-menu {
+    text-decoration: none;
+    color:black;
+}
+
+.links-menu:hover {
+    color: #FD4712 ;
+}
+
 .nav-historico::before{
     content:"";
     background-image: url(../images/icones/icon-sacola.png);

@@ -105,3 +105,12 @@ p{
     font-size: 12px;
     height: 30px;
 }
+
+.links-menu {
+    text-decoration: none;
+    color: black;
+}
+
+.links-menu:hover {
+    color: #FD4712;
+}

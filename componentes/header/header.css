@@ -34,6 +34,14 @@
     font-size: 10px;
 }
 
+.menu-lateral {
+    background-image: linear-gradient(to bottom, black, rgb(20, 20, 20));
+}
+
+.titulo-menu {
+    color:#FD4712 !important;
+}
+
 /* MEDIAS QUERIES  */
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -104,6 +112,8 @@
     }
     
 }
+
+
 
 
 /* Medium devices (tablets, 768px and up) */
