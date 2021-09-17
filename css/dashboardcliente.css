@@ -21,6 +21,7 @@ body{
 .titulo-nav{
     font-weight: 500;
     margin: 40px 0;
+    text-align: left;
 }
 
 .itens-nav{

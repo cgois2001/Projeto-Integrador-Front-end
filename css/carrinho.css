@@ -165,6 +165,10 @@ tbody{
     font-size: .7rem;
 }
 
+.nav-bar {
+    color:black !important;
+}
+
 /* Banner carrinho  */
 /* .banner-carrinho {
     border-radius: 8px;
