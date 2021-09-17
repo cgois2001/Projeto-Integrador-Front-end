@@ -8,6 +8,8 @@ body {
     font-family: 'Saira', sans-serif;
     background-color: #28004F;
     color: #EFEFEF;
+    padding: 0;
+    margin: 0;
 }
 
 h2 {
