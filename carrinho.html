@@ -7,190 +7,378 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Estilo MVP -->
     <link rel="stylesheet" href="/css/estilo.css">
     <link rel="stylesheet" href="/css/carrinho.css">
+    <link rel="stylesheet" href="/componentes/header/header.css">
+    <link rel='stylesheet' href="/componentes/modal-login/login.css">
     <link rel="stylesheet" href="/componentes/botoes/botoes.css">
     <link rel="stylesheet" href="/componentes/footer/footer.css">
     <link rel="stylesheet" href="/componentes/formularios/styles.css">
 
     <title>MVP SKINS | CARRINHO</title>
     <link rel="shortcut icon" type="imagex/png" href="/images/ID/image (2) (1).png">
-
   </head>
+
   <body>
-    <!-- Início da header -->
+  <!-- Início da header -->
+  <header class="row m-0 p-0">
+    <div class="topo-header row px-3">
+      <!-- INÍCIO LOGO  -->
+      <div class="logo col-4 col-xs-4 col-md-2 col-lg-2 col-xl-3">
+        <img src="/images/id/logo-final-1.png" width="130" alt="MVP">
+      </div>
+      <!-- FIM LOGO  -->
 
-    <!-- Fim do header  -->
-  
-    <!-- Início do body  -->
-    <!-- Início do container principal -->
-    <div class="px-4 px-lg-0">    
-      <div class="pb-5">
-        <div class="container">
-          <div class="row mx-0">
-            <div class="p-2 mb-5 row container-carrinho">
-              <!-- Início da lateral do carrinho -->
-              <div class="cupom-banner-carrinho py-3 col-lg-12 col-xl-4 ">
-                <!-- Início card de carteira virtual do carrinho  -->
-                <div class="card carteira-virtual">
-                  <div class="card-body">
-                    <h3 class="card-title">Carteira virtual</h3>
-                    <p class="card-text">Você não possui saldo creditado na sua conta. Solicite um novo depósito pelo botão abaixo.</p>
-                    <!-- Button de segunda importância  -->
-                    <button type="button" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp">Adicionar saldo</button>
-                  </div>
+      <!-- INÍCIO BARRA DE PESQUISA -->
+      <div class="barra-pesquisa col-8 col-xs-8 col-md-6 col-lg-6 col-xl-6">
+        <form class="d-flex">
+          <input type="search" class="input-search" placeholder="O que você esta procurando?" class="ps-2" />
+        </form>
+      </div>
+      <!-- FIM BARRA DE PESQUISA -->
+
+      <!--BOTÃO DO MODAL-->
+      <div class="botoes-menu col-12 col-xs-12 col-md-4 col-lg-4 col-xl-3">
+        <button type="button" class="btn btn-primary btn-mvp btn-secundario-mvp btn-login" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">
+          Login
+        </button>
+      <!--FIM DO BOTÃO DO MODAL-->
+      
+      <!-- BOTÃO DE LOGIN  -->
+        <button type="reset" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp btn-cadastrar"
+          data-bs-dismiss="modal">
+          Cadastre-se
+        </button>
+      </div>
+      <!-- FIM BOTÃO DE LOGIN -->
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title  login-title" id="exampleModalLabel">FAÇA LOGIN</h5>
+          </div>
+          <div class="modal-body">
+            <div class="container d-flex flex-column">
+              <!--FORMULÁRIO DE LOGIN-->
+              <form>
+                <div class="mb-3">
+                  <label for="" class="form-label login-title">E-mail</label>
+                  <input type="email" class="form-control caixas-de-insercao login" aria-describedby="emailHelp"
+                    placeholder="Digite seu e-mail">
                 </div>
-                <!-- Fim card de carteira virtual do carrinho  -->
-                <!-- Início banner lateral do carrinho  -->
-                <div class="banner-carrinho row">
-                </div>
-                <!-- Fim banner lateral do carrinho  -->
-              </div>
-              <!-- Fim da lateral do carrinho -->
-              
-              <!-- Início da listagem de produtos no carrinho -->
-              <div class="table-responsive carrinho py-3 mx-0 col-11 col-sm-11 col-md-10 col-lg-10 col-xl-8">
-                <table class="table container-itens col-md-12 col-lg-12">
-                  <thead>
-                    <tr>
-                      <th scope="col" class="border-0">
-                        <div class="p-2 px-3 text-uppercase titulo-carrinho">Produto</div>
-                      </th>
-                      <th scope="col" class="border-0">
-                        <div class="py-2 text-uppercase titulo-carrinho">Descrição</div>
-                      </th>
-                      <th scope="col" class="border-0">
-                        <div class="py-2 text-uppercase titulo-carrinho">Preço</div>
-                      </th>
-                      <th scope="col" class="border-0">
-                        <div class="py-2 text-uppercase titulo-carrinho">Excluir</div>
-                      </th>
-                    </tr>
-                  </thead>
+                <div class="mb-3">
+                  <label for="" class="form-label login-title">Senha</label>
+                  <input type="password" class="form-control caixas-de-insercao login"
+                    placeholder="Digite sua senha">
 
-                  <!-- =====================PRIMEIRO PRODUTO===================== -->
-                  <tr class="item mx-0">
-                    <th scope="row" class="border-0">
-                      <div class="p-2 container-img-item">
-                        <img src="/images/produtos/produto-carrousel-1.png" alt="" class="img-fluid rounded shadow-sm img-item">
-                      </div>
-                    </th>
-                    <td class="col-5">
-                      <div class="ml-3 d-inline-block align-middle container-descricao-item">
-                        <span class="text-muted font-italic">Categoria: luvas</span>
-                        <h3 class="mb-0"> <a href="#" class="d-inline-block align-middle">LUVAS ESPORTIVAS | BATRÁQUIO BRONZEADO</a></h3>
-                        <span class="text-muted font-italic">Raridade: Secreto</span>
-                      </div>
-                    </td>
-                    <td class="border-0 align-middle col-2 preco">R$79,00</td>
-                    <td class="border-0 align-middle col-2 trash-item "><a href="#"><i class="fa fa-trash"><img src="/componentes/icones/icon-lixeira.png" alt=""></i></a></td>
-                  </tr>
-
-                  <!-- =====================SEGUNDO PRODUTO===================== -->
-                  <tr class="item">
-                    <th scope="row" class="border-0">
-                      <div class="p-2 container-img-item">
-                        <img src="/images/produtos/produto-carrousel-1.png" alt="" class="img-fluid rounded shadow-sm img-item">
-                      </div>
-                    </th>
-                    <td class="col-5">
-                      <div class="ml-3 d-inline-block align-middle">
-                        <span class="text-muted font-italic ">Categoria: luvas</span>
-                        <h3 class="mb-0"> <a href="#" class="d-inline-block align-middle">LUVAS ESPORTIVAS | BATRÁQUIO BRONZEADO</a></h3>
-                        <span class="text-muted font-italic ">Raridade: Secreto</span>
-                      </div>
-                    </td>
-                    <td class="border-0 align-middle col-2 preco">R$79,00</td>
-                    <td class="border-0 align-middle col-2 trash-item "><a href="#"><i class="fa fa-trash"><img src="/componentes/icones/icon-lixeira.png" alt=""></i></a></td>
-                  </tr>
-
-                  <!-- =====================TERCEIRO PRODUTO===================== -->
-                  <tr class="item">
-                    <th scope="row" class="border-0">
-                      <div class="p-2 container-img-item">
-                        <img src="/images/produtos/produto-carrousel-1.png" alt="" class="img-fluid rounded shadow-sm img-item">
-                      </div>
-                    </th>
-                    <td class="col-5">
-                      <div class="ml-3 d-inline-block align-middle">
-                        <span class="text-muted font-italic">Categoria: luvas</span>
-                        <h3 class="mb-0"> <a href="#" class="d-inline-block align-middle">LUVAS ESPORTIVAS | BATRÁQUIO BRONZEADO</a></h3>
-                        <span class="text-muted font-italic">Raridade: Secreto</span>
-                      </div>
-                    </td>
-                    <td class="border-0 align-middle col-2 preco">R$79,00</td>
-                    <td class="border-0 align-middle col-2 trash-item "><a href="#"><i class="fa fa-trash"><img src="/componentes/icones/icon-lixeira.png" alt=""></i></a></td>
-                  </tr>
-
-                </table>
-                <!-- Fim da listagem de proodutos no carrinho -->
-
-                <!-- Início da div de preços  -->
-                <div class="container preco-final py-3">
-                  <div class="container-cupom-desconto p-3 col-9">
-                    <div class="cupom-titulo row px-3">
-                      <p class="m-0">Cupom de desconto</p>
-                    </div>
-
-                    <div class="input-cupom row px-2"> 
-                      <div class="col-8">
-                        <input type="text" class="form-control caixas-de-insercao login" aria-describedby="cupom" placeholder="Digite seu cupom">
-                      </div>
-
-                      <div class="col-4">
-                        <!-- Button de segunda importância  -->
-                        <button type="button" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp ml-2">Aplicar</button>
-                      </div>
-                    </div>
-
-                    <div class="col-6 cupom">
-
+                  <!--BOTÃO DO COLLAPSE (ESQUECI A SENHA)-->
+                  <button class="links-login" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseWidthExample" aria-expanded="false"
+                    aria-controls="collapseWidthExample">
+                    Esqueci a senha
+                  </button>
+                  <!--FIM DO BOTÃO DO COLLAPSE-->
+                  <!--COLLAPSE (ESQUECI A SENHA)-->
+                  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                    <div class="card card-body redefinir-senha" style="width: 420px;">
+                      Esqueceu sua senha? Fique tranquilo, digite seu e-mail aqui em baixo para te
+                      enviarmos um e-mail com o link pra redefinição da sua senha:
+                      <p></p>
+                      <form>
+                        <div class="mb-3 d-flex justify-content-start">
+                          <input type="email" class="form-control caixas-de-insercao login"
+                            aria-describedby="emailHelp" placeholder="Digite seu e-mail">
+                        </div>
+                        <div class="d-flex flex-column justify-content-end">
+                          <button type="button" class="btn btn-primary btn-mvp btn-primario-mvp btn-logar"
+                            data-bs-toggle="collapse" data-bs-target="#collapseWidthExample1" aria-expanded="false"
+                            aria-controls="collapseWidthExample1">
+                            ENVIAR
+                          </button>
+                          <div class="collapse collapse-horizontal" id="collapseWidthExample1">
+                            <div class="card card-body redefinir-senha" style="width: 400px;">
+                              Já te enviamos o e-mail, cheque sua caixa de entrada para
+                              prosseguir com a redefinição da sua senha.
+                            </div>
+                          </div>
+                        </div>
+                      </form>
                     </div>
                   </div>
-
-                    <div class="container-preco p-4 col-3">
-                      <div class="pagamento row">
-                        <p class="m-auto">Total</p>
-                      </div>
-
-                      <div class="total row">
-                          <p class="m-auto">R$1.448,99</p>
-                      </div>
-                    </div>
+                  <!--FIM DO COLLAPSE (ESQUECI A SENHA)-->
                 </div>
-                <!-- Fim da div de preços  -->
-
-                <!-- Início da div com botões -->
-                <div class="botoes-carrinho py-3 px-0">
-                  <!-- Button de segunda importância  -->
-                  <button type="button" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp btn-continuar-comprando mx-5">Continuar comprando</button>
-            
-                  <!-- Button de primeira importância -->
-                  <button type="button" class="btn btn-primary btn-mvp btn-primario-mvp">Finalizar compra</button>
+              </form>
+              <!--FIM DO FORMULÁRIO DE LOGIN-->
+              <!--BOTÕES DO FORMULÁRIO-->
+              <div class="modal-footer d-flex flex-row justify-content-between">
+                <div class="col-2"></div>
+                <div class="btn btn-steam d-flex align-items-center col-6">
+                  <img class="col-2" src="/componentes/icones/icon-steam.png">
+                  <a class="link-steam col-10" href="https://steamcommunity.com/login">LOGIN COM
+                    STEAM</a>
                 </div>
-                <!-- Fim da div com botões -->
+                <div class="col-2"></div>
+                <div class="col-5 d-flex flex-column justify-content-start">
+                  <button type="reset" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp btn-cancelar"
+                    data-bs-dismiss="modal">
+                    CANCELAR
+                  </button>
+                </div>
+                <div class="col-6 d-flex flex-column justify-content-end">
+                  <button type="submit" class="btn btn-primary btn-mvp btn-primario-mvp btn-logar">
+                    LOGIN
+                  </button>
+                </div>
+                <div class="sem-conta">
+                  Não possui conta?
+                  <a class="links-login" href="#"> Cadastre-se</a>
+                </div>
               </div>
-
-
-
+              <!--FIM DOS BOTÕES DO FORMULÁRIO-->
             </div>
-          </div>    
+          </div>
         </div>
       </div>
     </div>
+    <!--FIM DO MODAL-->
+
+    <!-- INICIO NAVBAR -->
+    <div class="row w-100 m-0 p-0">
+      <ul class="nav justify-content-around align-items-center nav-principal">
+        <li class="nav-item link-header">
+          <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <img src="/images/icones/icon-menu.png" width="30" height="30">
+          </a>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Titulo(Opcional)</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between"> Facas
+                    <img src="/images/icones/icon-faca.png" width="30" height="30">
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between">Luvas
+                    <img src="/images/icones/icon-luva.png" width="30" height="30">
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between">Caixas
+                    <img src="/images/icones/icon-caixa.png" width="30" height="30">
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between">Agentes
+                    <img src="/images/icones/icon-agente.png" width="30" height="30">
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between">Armas
+                    <img src="/images/icones/icon-arma.png" width="30" height="30">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item categorias">
+          <a class="nav-link link-header" href="#">
+            <img src="/images/icones/icon-arma.png" width="30" height="30"> Armas
+          </a>
+        </li>
+        <li class="nav-item categorias">
+          <a class="nav-link link-header" href="#">
+            <img src="/images/icones/icon-faca.png" width="30" height="30"> Facas
+          </a>
+        </li>
+        <li class="nav-item categorias">
+          <a class="nav-link link-header" href="#">
+            <img src="/images/icones/icon-luva.png" width="30" height="30"> Luvas
+          </a>
+        </li>
+        <li class="nav-item categorias">
+          <a class="nav-link link-header" href="#">
+            <img src="/images/icones/icon-caixa.png" width="30" height="30"> Caixas
+          </a>
+        </li>
+        <li class="nav-item categorias">
+          <a class="nav-link link-header" href="#">
+            <img src="/images/icones/icon-agente.png" width="30" height="30"> Agentes
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-header" href="#">Favoritos
+            <img src="/images/icones/icon-coracao.png" width="30" height="30">
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link link-header" href="#">Carrinho
+            <img src="/images/icones/icon-carrinho.png" width="30" height="30">
+          </a>
+        </li>
+
+      </ul>
+    </div>
+    <!-- FIM NAVBAR -->
+  </header>
+  <!-- Fim do header  -->
+  
+    <!-- Início do body  -->
+    <!-- Início do container principal -->
+    <div class="container">
+      <div class="py-5 m-auto row">
+        <!-- Início da lateral do carrinho -->
+        <div class="cupom-banner-carrinho col-lg-12 col-xl-4 ">
+          <!-- Início card de carteira virtual do carrinho  -->
+          <div class="card carteira-virtual">
+            <div class="card-body">
+              <h3 class="card-title">Carteira virtual</h3>
+              <p class="card-text">Você não possui saldo creditado na sua conta. Solicite um novo depósito pelo botão abaixo.</p>
+              <!-- Button de segunda importância  -->
+              <button type="button" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp">Adicionar saldo</button>
+            </div>
+          </div>
+          <!-- Fim card de carteira virtual do carrinho  -->
+          <!-- Início banner lateral do carrinho  -->
+          <div class="banner-carrinho row">
+          </div>
+          <!-- Fim banner lateral do carrinho  -->
+        </div>
+        <!-- Fim da lateral do carrinho -->
+        
+        <!-- Início da listagem de produtos no carrinho -->
+        <div class="table-responsive carrinho py-3 mx-0 col-11 col-sm-11 col-md-10 col-lg-10 col-xl-8">
+          <table class="table container-itens col-md-12 col-lg-12">
+            <thead>
+              <tr>
+                <th scope="col" class="border-0">
+                  <div class="p-2 px-3 text-uppercase titulo-carrinho">Produto</div>
+                </th>
+                <th scope="col" class="border-0">
+                  <div class="py-2 text-uppercase titulo-carrinho">Descrição</div>
+                </th>
+                <th scope="col" class="border-0">
+                  <div class="py-2 text-uppercase titulo-carrinho">Preço</div>
+                </th>
+                <th scope="col" class="border-0">
+                  <div class="py-2 text-uppercase titulo-carrinho">Excluir</div>
+                </th>
+              </tr>
+            </thead>
+
+            <!-- =====================PRIMEIRO PRODUTO===================== -->
+            <tr class="item mx-0">
+              <th scope="row" class="border-0">
+                <div class="p-2 container-img-item">
+                  <img src="/images/produtos/adaga-marcara-urbana.png" alt="" class="img-fluid rounded shadow-sm img-item">
+                </div>
+              </th>
+              <td class="col-5">
+                <div class="ml-3 d-inline-block align-middle container-descricao-item">
+                  <span class="text-muted font-italic">Categoria: adagas</span>
+                  <h3 class="mb-0"> <a href="#" class="d-inline-block align-middle">Adaga sombria | Aço de Damasco</a></h3>
+                  <span class="text-muted font-italic">Raridade: Oculto</span>
+                </div>
+              </td>
+              <td class="border-0 align-middle col-2 preco">R$473,00</td>
+              <td class="border-0 align-middle col-2 trash-item "><a href="#"><i class="fa fa-trash"><img src="/componentes/icones/icon-lixeira.png" alt=""></i></a></td>
+            </tr>
+
+            <!-- =====================SEGUNDO PRODUTO===================== -->
+            <tr class="item">
+              <th scope="row" class="border-0">
+                <div class="p-2 container-img-item">
+                  <img src="/images/produtos/luva-abate.png" alt="" class="img-fluid rounded shadow-sm img-item">
+                </div>
+              </th>
+              <td class="col-5">
+                <div class="ml-3 d-inline-block align-middle">
+                  <span class="text-muted font-italic ">Categoria: luvas</span>
+                  <h3 class="mb-0"> <a href="#" class="d-inline-block align-middle">LUVA ESPORTIVA | ABATE</a></h3>
+                  <span class="text-muted font-italic ">Raridade: Extraordinário</span>
+                </div>
+              </td>
+              <td class="border-0 align-middle col-2 preco">R$2.949,00</td>
+              <td class="border-0 align-middle col-2 trash-item "><a href="#"><i class="fa fa-trash"><img src="/componentes/icones/icon-lixeira.png" alt=""></i></a></td>
+            </tr>
+
+            <!-- =====================TERCEIRO PRODUTO===================== -->
+            <tr class="item">
+              <th scope="row" class="border-0">
+                <div class="p-2 container-img-item">
+                  <img src="/images/produtos/aug-momento.png" alt="" class="img-fluid rounded shadow-sm img-item">
+                </div>
+              </th>
+              <td class="col-5">
+                <div class="ml-3 d-inline-block align-middle">
+                  <span class="text-muted font-italic">Categoria: rifles</span>
+                  <h3 class="mb-0"> <a href="#" class="d-inline-block align-middle">RIFLE AUG | MOMENTOS</a></h3>
+                  <span class="text-muted font-italic">Raridade: Secreto</span>
+                </div>
+              </td>
+              <td class="border-0 align-middle col-2 preco">R$92,00</td>
+              <td class="border-0 align-middle col-2 trash-item "><a href="#"><i class="fa fa-trash"><img src="/componentes/icones/icon-lixeira.png" alt=""></i></a></td>
+            </tr>
+
+          </table>
+          <!-- Fim da listagem de proodutos no carrinho -->
+
+          <!-- Início da div de preços  -->
+          <div class="container preco-final py-3">
+            <div class="container-cupom-desconto p-3 col-9">
+              <div class="cupom-titulo row px-3">
+                <p class="m-0">Cupom de desconto</p>
+              </div>
+
+              <div class="input-cupom row px-2"> 
+                <div class="col-8">
+                  <input type="text" class="form-control caixas-de-insercao login" aria-describedby="cupom" placeholder="Digite seu cupom">
+                </div>
+
+                <div class="col-4">
+                  <!-- Button de segunda importância  -->
+                  <button type="button" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp ml-2">Aplicar</button>
+                </div>
+              </div>
+
+              <div class="col-6 cupom">
+
+              </div>
+            </div>
+
+              <div class="container-preco p-4 col-3">
+                <div class="pagamento row">
+                  <p class="m-auto">Total</p>
+                </div>
+
+                <div class="total row">
+                    <p class="m-auto">R$1.448,99</p>
+                </div>
+              </div>
+          </div>
+          <!-- Fim da div de preços  -->
+
+          <!-- Início da div com botões -->
+          <div class="botoes-carrinho py-3 px-0">
+            <!-- Button de segunda importância  -->
+            <button type="button" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp btn-continuar-comprando mx-5"><a href="/Home/home.html">Continuar comprando</a></button>
+      
+            <!-- Button de primeira importância -->
+            <button type="button" class="btn btn-primary btn-mvp btn-primario-mvp"><a href="/pagamento.html">Finalizar compra</a></button>
+          </div>
+          <!-- Fim da div com botões -->
+        </div>
+      </div>  
+    </div>
     <!-- Fim do carrinho de compras -->
-
-
-
-
-
-
-
 
     <!-- Fim do body  -->
 
-    <!-- inicio footer -->
+    <!--inicio footer-->
     <footer class="container d-flex justify-content-center mw-100 px-0">
       <div class="row col-12 justify-content-around py-3">
           <div class="row d-none d-lg-flex col-lg-8 justify-content-around">
@@ -227,22 +415,22 @@
               <div class="row col-12 justify-content-center justify-content-lg-around py-1">
                   <div class="col-2 col-lg-3 texto-footer">
                       <a class="link-footer" href="https://www.facebook.com/" target="_blank">
-                          <img src="./componentes/icones/icon-facebook.png" alt="ícone do facebook" class="icon-footer">
+                          <img src="/images/icones/icon-facebook.png" alt="ícone do facebook" class="icon-footer">
                       </a>
                   </div>
                   <div class="col-2 col-lg-3 texto-footer">
                       <a class="link-footer" href="https://twitter.com/" target="_blank">
-                          <img src="./componentes/icones/icon-twitter.png" alt="ícone do twitter" class="icon-footer">
+                          <img src="/images/icones/icon-twitter.png" alt="ícone do twitter" class="icon-footer">
                       </a>
                   </div>
                   <div class="col-2 col-lg-3 texto-footer">
                       <a class="link-footer" href="https://discord.com/" target="_blank">
-                      <img src="./componentes/icones/icon-discord.png" alt="ícone do discord" class="icon-footer">
+                      <img src="/images/icones/icon-discord.png" alt="ícone do discord" class="icon-footer">
                       </a>
                   </div>
                   <div class="col-2 col-lg-3 texto-footer">
                       <a class="link-footer" href="https://www.instagram.com/" target="_blank">
-                          <img src="./componentes/icones/icon-instagram.png" alt="ícone do instagram" class="icon-footer">
+                          <img src="/images/icones/icon-instagram.png" alt="ícone do instagram" class="icon-footer">
                       </a>
                   </div>
               </div>
@@ -250,10 +438,10 @@
               <!-- metodos de pagamento -->
               <div class="row d-none d-lg-flex col-12 justify-content-center pb-1 mx-0">MÉTODOS DE PAGAMENTO</div>
               <div class="row d-none d-lg-flex col-lg-12 justify-content-around py-1">
-                  <div class="col-lg-3 texto-footer"><img src="./componentes/icones/icon-mastercard.png" alt="ícone do mastercard" class="icon-footer"></div>
-                  <div class="col-lg-3 texto-footer"><img src="./componentes/icones/icon-visa.png" alt="ícone da visa" class="icon-footer"></div>
-                  <div class="col-lg-3 texto-footer"><img src="./componentes/icones/icon-codigo-de-barras.png" alt="ícone do boleto" class="icon-footer"></div>
-                  <div class="col-lg-3 texto-footer"><img src="./componentes/icones/icon-pix.png" alt="ícone do pix" class="icon-footer"></div>
+                  <div class="col-lg-3 texto-footer"><img src="/images/icones/icon-mastercard.png" alt="ícone do mastercard" class="icon-footer"></div>
+                  <div class="col-lg-3 texto-footer"><img src="/images/icones/icon-visa.png" alt="ícone da visa" class="icon-footer"></div>
+                  <div class="col-lg-3 texto-footer"><img src="/images/icones/icon-codigo-de-barras.png" alt="ícone do boleto" class="icon-footer"></div>
+                  <div class="col-lg-3 texto-footer"><img src="/images/icones/icon-pix.png" alt="ícone do pix" class="icon-footer"></div>
               </div>
               <div class="row d-lg-none col-12 justify-content-center py-3 mx-0">
                   <div class="texto-footer"><a class="link-footer" href="">LOGIN</a></div><br>
@@ -264,12 +452,13 @@
               <div class="row d-lg-none col-12 justify-content-center py-3 mx-0 text-center">© MVP SKINS 2021 | CNPJ: 61.585.865/0001-51 |  TODOS OS DIREITOS RESERVADOS</div>
           </div>
       </div>
-    </footer>
-    <!-- fim footer -->
+  </footer>
+  <!-- fim footer -->
 
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   </body>
 </html>
