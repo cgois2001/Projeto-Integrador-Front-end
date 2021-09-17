@@ -1,9 +1,11 @@
+/* Organização dos cards de produtos no carousel */
 .cards-produtos {
-    display: flex !important;
+    display: flex;
     justify-content: center;
     flex-wrap: nowrap;
 }
 
+/* MEDIAS QUERIES */
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
