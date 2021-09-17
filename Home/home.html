@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home MVP</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel='stylesheet' href="./css/home.css">
+  
+</head>
+
+<body>
+   <!-- INICIO HEADER -->
+   <header>
+    <header class = "py-4">
+      <div class = "container">
+        <div class = "row align-items-center">
+          <div class = "col lg-3 col-md-2 col-xs-12">
+            <img src = "./images/logo-final-2-fonte-preta(1).png" width="130" alt="MVP">
+        </div>
+          <div class="col lg-6 col-md-6 my-3">
+            <form class="d-flex">
+                <input type="search" class="input-search" placeholder="O que você esta procurando?" class="ps-2" />
+            </form>
+        </div>
+        
+    </header>
+   
+   <!-- <! - - BANNER-CARROUSEL DA PARTE DE DESTAQUES -->
+    <div class = " container-fluid d-flex justify-content-center align-items-center titulo-banner ">
+        Destaques
+    </div >
+    <div class = " container-fluid caixa-banner " >
+        <div id = " carrossel-destaque " class = " carrossel slide " data-bs-ride = " carrossel " >
+            <div class = " carousel-indicators " >
+              <button type = " button " data-bs-target = " # carrousel-destaque " data-bs-slide-to = " 0 " class = " ativo " aria-current = " true " aria-label = " Slide 1 " >  </button>
+              <button type = " button " data-bs-target = " # carrousel-destaque " data-bs-slide-to = " 1 " aria-label = " Slide 2 " >  </button>
+              <button type = " button " data-bs-target = " # carrousel-destaque " data-bs-slide-to = " 2 " aria-label = " Slide 3 " >  </button>
+            </div  >
+            <div class = " carousel-inner banner " >
+              <div class = " carrossel-item ativo " >
+                <img src = "./images/CSGO.jpg" class = "d-block w-100 " alt = " ... " >
+                <div class = " carousel-caption d-none d-md-block " >
+                    <h5> Comece a jogar agora </h5>
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, nisi illo fuga excepturi veritatis repellat animi pariatur dolorem perspiciatis consequuntur iusto exercitationem voluptas explicabo incidunt similique suscipit rerum quisquam asperiores? </ p  >
+                </div >
+              </div >
+              <div class = " carousel-item " >
+                <img src = "./images/csgowallpaper_952490122386_1568752841_895025878978.jpg " class = " d-block w-90 " alt = " ... " >
+                <div class = " carousel-caption d-none d-md-block " >
+                  <h5> Top skins </h5 >
+                  <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas excepturi ipsum assumenda ad deleniti vero, commodi quam illo ratione accusamus mollitia repellendus nemo nulla nostrum harum itaque placeat hic est! </p>
+                </div >
+              </div>
+              <div class = " carousel-item " >
+                <img src = " ./images/CSGO.jfif " class = " bloco d w-100 " alt = " ... " >
+                <div class = " carousel-caption d-none d-md-block " >
+                  <h5> Outros </h5 >
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum repellat, fuga cumque saepe incidunt voluptatibus sint ad dolore animi rem tempore odit e a assumenda ducimus modi impedit sit at. </p>
+                </div>
+              </div>
+            </div>
+            <button   class = " carousel-control-prev " type = " button " data-bs-target = " # carrousel-destaque " data-bs-slide = " prev " >
+              <span   class = " carousel-control-prev-icon " aria-hidden = " true " >  </ span  >
+              <span   class = " visually-hidden " > Anterior </span >
+            </button>
+            <button   class = " carrousel-control-next " type = " button " data-bs-target = " # carrousel-destaque " data-bs-slide = " next " >
+              <span   class = " carousel-control-next-icon " aria-hidden = " true " >  </span >
+              <span   class = " visually-hidden " > Próximo </span>
+            </button>
+          </div>
+    </div>
+    <!-- <! - <! - FIM BANNER-CARROUSEL DA PARTE DE DESTAQUES -> -> -->
+    
+    <!-- <! - <! - BANNER-CARROUSEL DA PARTE DE EVENTOS -> -> -->
+    <div   class = " container-fluid d-flex justify-content-center align-items-center titulo-banner " >
+        Eventos
+    </div>
+    <div class = " container-fluid caixa-banner " >
+        <div id = " carrousel-evento " class = " carrousel slide " data-bs-ride = " carrousel " >
+            <div class = " carousel-indicators " >
+              <button   type = " button " data-bs-target = " # carrousel-evento " data-bs-slide-to = " 0 " class = " ativo " aria-current = " true " aria-label = " Slide 1 " >  </button >
+              <button   type = " button " data-bs-target = " # carrousel-evento " data-bs-slide-to = " 1 " aria-label = " Slide 2 " >  </button>
+              <button   type = " button " data-bs-target = " # carrousel-evento " data-bs-slide-to = " 2 " aria-label = " Slide 3 " >  </button>
+            </div>
+            <div class = " carousel-inner banner " >
+              <div class = " carrossel-item ativo " >
+                <img src = "./images/csgo-major-de-2021-sera-em-estocolmo.jpg " class = " w-100 " alt = " ... " >
+                <div class = " carousel-caption d-none d-md-block " >
+                    <h5> Campeonatos </h5 >
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, nisi illo fuga excepturi veritatis repellat animi pariatur dolorem perspiciatis consequuntur iusto exercitationem voluptas explicabo incidunt similique suscipit rerum quisquam asperiores? </p>
+                </div>
+              </div>
+              <div class = " carousel-item " >
+                <img src = "./images/7oxe2g7t0y411 (1).jpg" class = " d-block w-100 " alt = " ... " >
+                <div class = " carousel-caption d-none d-md-block " >
+                  <h5 > Ligas </h5>
+                  <p > Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas excepturi ipsum assumenda ad deleniti vero, commodi quam illo ratione accusamus mollitia repellendus nemo nulla nostrum harum itaque placeat hic est! </p>
+                </div>
+              </div >
+              <div  class = " carousel-item " >
+                <img   src = " ./images/csgowallpaper_952490122386_1568752841_895025878978.jpg " class = " d-block w-100 " alt = " ... " >
+                <div   class = " carousel-caption d-none d-md-block " >
+                   <h5> Brasil Representa! </h5 >
+                  <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum repellat, fuga cumque saepe incidunt voluptatibus sint ad dolore animi rem tempore odit e a assumenda ducimus modi impedit sit at. </p>
+                </div>
+              </div>
+            </div>
+            <button   class = " carousel-control-prev " type = " button " data-bs-target = " # carrousel-evento " data-bs-slide = " prev " >
+              <span   class = " carousel-control-prev-icon " aria-hidden = " true " >  </span>
+              <span   class = " visually-hidden " > Anterior </span>
+            </button >
+            <button   class = " carousel-control-next " type = " button " data-bs-target = " # carrousel-evento " data-bs-slide = " next " >
+              <span   class = " carousel-control-next-icon " aria-hidden = " true " >  </span>
+              <span   class = " visually-hidden " > Próximo </span>
+            </button>
+          </div>
+    </div>
+    <!-- <! - <! - FIM BANNER-CARROUSEL DA PARTE DE EVENTOS -> -> -->
+
+    <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integridade = "sha384- / bQdsTh / da6pkI1MST / rWKFNjaCP5gBSY4sEBT38Q / 9RBh9AH40zEOg7Hlq2THRZ "
+        crossorigin = "anonymous"> </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
