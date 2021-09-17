@@ -7,6 +7,11 @@
     justify-content: space-between;
 }
 
+.container-carrinho {
+    display: flex;
+    justify-content: center;
+}
+
 .container-itens {
     height: 20vh;
     width: 48vw;
@@ -98,6 +103,12 @@ tbody{
 
 .input-cupom {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-cupom div {
+    padding: 0;
 }
 
 /* Preço final */
@@ -137,17 +148,77 @@ tbody{
 }
 /* Fim botoões do carrinho  */
 
+/* Carteira virtual  */
+.carteira-virtual {
+    background-color:#766289;
+    border-radius: 8px;
+}
+
+.carteira-virtual h3 {
+    font-size: 1rem;
+    color: #28004F !important;
+    font-weight: 500;
+}
+
+.carteira-virtual p {
+    font-size: .7rem;
+}
+
+/* Banner carrinho  */
+/* .banner-carrinho {
+    border-radius: 8px;
+    margin-top: 5vh;
+    overflow: hidden;
+} */
 
 /* MEDIAS QUERIES  */
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
+    .titulo-carrinho {
+        font-size: .9rem;
+    }
 
+    .text-muted {
+        display: none;
+    }
+    
+    h3 {
+        font-size: .6rem;
+        font-weight: 300;
+    }
+
+    .cupom-titulo p, .pagamento p, .total p {
+        font-size: .8rem !important;
+    }
+
+    .btn-mvp {
+        font-size:.7rem !important;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+    .titulo-carrinho {
+        font-size: .9rem;
+    }
 
+    .text-muted {
+        display: none;
+    }
+    
+    h3 {
+        font-size: .6rem;
+        font-weight: 300;
+    }
+
+    .cupom-titulo p, .pagamento p, .total p {
+        font-size: .8rem !important;
+    }
+
+    .btn-mvp {
+        font-size:.7rem !important;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -157,7 +228,11 @@ tbody{
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-
+    .carteira-virtual {
+        margin: 0 auto;
+        padding: 0 auto;
+        width: 80vw;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
