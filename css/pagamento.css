@@ -41,6 +41,27 @@ body{
     font-size:18px;
 }
 
+/* formulario cartao */
+.caixa-forma-pagamento {
+    background-color: transparent;
+    border-radius: 8px;
+}
+.forma-pagamento {
+    background-color: transparent;
+}
+
+.caixa-cadastro-cartao {
+    background-color: transparent;
+    border-bottom: 1px solid black;
+}
+
+.caixa-cadastro-cartao:focus {
+    box-shadow: none;
+    background-color: #efefef65;
+    border-color: black;
+}
+/* formulario cartao */
+
 .linha-pagamento{
     border-left: 3px solid #28004F;
 }

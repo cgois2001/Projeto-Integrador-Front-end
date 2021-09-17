@@ -133,6 +133,8 @@ background-image: linear-gradient(to bottom, #0F1B45, #0f1b4575 );
     flex-wrap: nowrap;
 
 }
+
+
 @media(max-width:855px){
     .categorias{
         display:none;

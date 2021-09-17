@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link href="./css/estilo.css" rel="stylesheet">
+    <link href="componentes/formularios/styles.css" rel="stylesheet">
     <link href="./css/footer.css" rel="stylesheet">
     <link href="./componentes/botoes/botoes.css" rel="stylesheet">
     <link href="./css/pagamento.css" rel="stylesheet">
-    <title>Document</title>
+    <link rel='stylesheet' href="./componentes/modal-login/login.css">
+    <link rel='stylesheet' href="./Home/css/home.css">
+    <title>MVP Skins</title>
 </head>
 <body>
+
     <!-- inicio pagamento -->
     <h1 class="h1-pagamento mt-4 mb-0">PAGAMENTO</h1>
     <section class="container d-flex mw-100 my-3 p-0">
@@ -20,7 +24,7 @@
                 <div class="col-11 container-pagamento">
                     <div class="col-12 div-pagamento">
                         <div class="row col-11 m-3 p-2 produto-pagamento">
-                            <div class="col-5"><img class="imagem-resumo" src="./images/produto-carrousel-1.png" alt=""></div>
+                            <div class="col-5"><img class="imagem-resumo" src="./images/PRODUTOS/produto-carrousel-1.png" alt=""></div>
                             <div class="col-7">
                                 <div>LUVAS ESPORTIVAS | BATRÁQUIO BRONZEADO</div>
                                 <div class="quantidade-pagamento">QUANTIDADE: 1</div>
@@ -28,7 +32,7 @@
                             </div>
                         </div>
                         <div class="row col-11 m-3 p-2 produto-pagamento">
-                            <div class="col-5"><img class="imagem-resumo" src="./images/produto-carrousel-1.png" alt=""></div>
+                            <div class="col-5"><img class="imagem-resumo" src="./images/PRODUTOS/produto-carrousel-1.png" alt=""></div>
                             <div class="col-7">
                                 <div>LUVAS ESPORTIVAS | BATRÁQUIO BRONZEADO</div>
                                 <div class="quantidade-pagamento">QUANTIDADE: 1</div>
@@ -54,38 +58,63 @@
                     </div>
                 </div>
             </div>
-            
             <!-- fim resumo do pedido  -->
             <!-- inicio formas de pagamento -->
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center m-0  my-4 p-0"> 
+            <div class="col-12 col-md-6 col-lg-5 d-flex justify-content-center m-0 my-4 p-0"> 
                 <div class="col-11 container-pagamento">
                     <div class="row col-12 mx-0 p-2 div-pagamento">
                         <input  class="col-1  formas-pagamento" type="radio" name="forma-pagamento" value="cartao-credito">
-                        <div class="col-2"><img src="./componentes/icones/icon-cartao-credito.png" class="imagem-pagamento"></div>
+                        <div class="col-2"><img src="./images/icones/icon-cartao-credito.png" class="imagem-pagamento"></div>
                         <div class="col-9 d-flex formas-pagamento">CARTÃO DE CRÉDITO</div>
+                        <!-- inicio formulario cartao -->
+                        <div class="container-flex d-flex justify-content-center caixa-forma-pagamento my-2 p-0">
+                            <div class="d-flex flex-column forma-pagamento col-12">
+                                <div class = "container cadastro-cartao d-flex flex-column px-0">
+                                    <input class="form-control p-2 caixa-cadastro-cartao" type="text" placeholder="Número do cartão">
+                                    <input class="form-control p-2 caixa-cadastro-cartao" type="text" placeholder="Nome completo">
+                                    <div class = "d-flex flex-row">
+                                        <div class = "col-5 d-flex">
+                                            <input class="form-control p-2 caixa-cadastro-cartao" type="text" placeholder="Data de Vencimento">
+                                        </div>
+                                        <div class = "col-1"></div>
+                                        <div class = "col-6 d-flex">
+                                            <input class="form-control p-2 caixa-cadastro-cartao" type="text" placeholder="Código de Segurança">
+                                        </div> 
+                                    </div>
+                                    <input class="form-control p-2 caixa-cadastro-cartao" type="text" placeholder="CPF do títular do cartão" >
+                                    <select class="form-select caixa-cadastro-cartao" aria-label="Default select example">
+                                        <option selected class = "selecao">1x de R$ 400,00 sem juros</option>
+                                        <option value="1" class = "selecao">2x de R$ 200,00 sem juros</option>
+                                        <option value="2" class = "selecao">3x de R$ 133,33 sem juros</option>
+                                        <option value="3" class = "selecao">4x de R$ 100,00 sem juros</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!-- fim formulario cartao -->
                     <div class="row col-12 mx-0 p-2 div-pagamento">
                         <input  class="col-1  formas-pagamento" type="radio" name="forma-pagamento" value="pix">
-                        <div class="col-2 formas-pagamento"><img src="./componentes/icones/icon-pix2.png" class="imagem-pagamento"></div>
+                        <div class="col-2 formas-pagamento"><img src="./images/icones/icon-pix2.png" class="imagem-pagamento"></div>
                         <div class="col-9 d-flex formas-pagamento">PIX</div>
                     </div>
                     <div class="row col-12 mx-0 p-2">
                         <input  class="col-1  formas-pagamento" type="radio" name="forma-pagamento" value="boleto">
-                        <div class="col-2 formas-pagamento"><img src="./componentes/icones/icone-codigo-de-barras2.png" class="imagem-pagamento"></div>
+                        <div class="col-2 formas-pagamento"><img src="./images/icones/icone-codigo-de-barras2.png" class="imagem-pagamento"></div>
                         <div class="col-9 d-flex formas-pagamento">BOLETO</div>
                     </div>
                 </div>
             </div>
             <!-- fim formas de pagamento -->
             <!-- inicio finalização compra -->
-            <div class="col-12 col-md-12 col-lg-4 d-flex justify-content-center m-0  my-4 p-0">
+            <div class="col-12 col-md-12 col-lg-3 d-flex justify-content-center m-0  my-4 p-0">
                 <div class="col-11 flex-column align-items-around container-pagamento">
                     <div class="row col-12 mx-0 p-2 h-20 div-pagamento">
-                        <div class="col-2"><img class="formas-pagamento"src="componentes/icones/icon-cupom.png" width=50px height=40px></div>
+                        <div class="col-2"><img class="formas-pagamento"src="./images/icones/icon-cupom.png" width=50px height=40px></div>
                         <div class="col-10 d-flex formas-pagamento">ADICIONAR UM CUPOM DE DESCONTO</div>
-                        <div class="row col-12 mx-0 my-3 justify-content-around">
+                        <div class="row col-12 mx-0 my-3 p-0 justify-content-around">
                             <input class="col-7" type="text" id="cupom" value="" placeholder="Insira o código">
-                            <button type="button" class="btn btn-primary btn-mvp btn-primario-mvp btn-cupom col-4">SALVAR</button>
+                            <button type="button" class="btn btn-primary btn-mvp btn-primario-mvp btn-cupom text-center col-5">SALVAR</button>
                         </div>
                     </div>
                     <div class="row col-12 mx-0 my-2 p-2 h-60 div-pagamento">
@@ -140,22 +169,22 @@
                 <div class="row col-12 justify-content-center justify-content-lg-around py-1">
                     <div class="col-2 col-lg-3 texto-footer">
                         <a class="link-footer" href="https://www.facebook.com/" target="_blank">
-                            <img src="./componentes/icones/icon-facebook.png" alt="ícone do facebook" class="icon-footer">
+                            <img src="./images/icones/icon-facebook.png" alt="ícone do facebook" class="icon-footer">
                         </a>
                     </div>
                     <div class="col-2 col-lg-3 texto-footer">
                         <a class="link-footer" href="https://twitter.com/" target="_blank">
-                            <img src="./componentes/icones/icon-twitter.png" alt="ícone do twitter" class="icon-footer">
+                            <img src="./images/icones/icon-twitter.png" alt="ícone do twitter" class="icon-footer">
                         </a>
                     </div>
                     <div class="col-2 col-lg-3 texto-footer">
                         <a class="link-footer" href="https://discord.com/" target="_blank">
-                        <img src="./componentes/icones/icon-discord.png" alt="ícone do discord" class="icon-footer">
+                        <img src="./images/icones/icon-discord.png" alt="ícone do discord" class="icon-footer">
                         </a>
                     </div>
                     <div class="col-2 col-lg-3 texto-footer">
                         <a class="link-footer" href="https://www.instagram.com/" target="_blank">
-                            <img src="./componentes/icones/icon-instagram.png" alt="ícone do instagram" class="icon-footer">
+                            <img src="./images/icones/icon-instagram.png" alt="ícone do instagram" class="icon-footer">
                         </a>
                     </div>
                 </div>
@@ -163,10 +192,10 @@
                 <!-- metodos de pagamento -->
                 <div class="row d-none d-lg-flex col-12 justify-content-center pb-1 mx-0">MÉTODOS DE PAGAMENTO</div>
                 <div class="row d-none d-lg-flex col-lg-12 justify-content-around py-1">
-                    <div class="col-lg-3 texto-footer"><img src="./componentes/icones/icon-mastercard.png" alt="ícone do mastercard" class="icon-footer"></div>
-                    <div class="col-lg-3 texto-footer"><img src="./componentes/icones/icon-visa.png" alt="ícone da visa" class="icon-footer"></div>
-                    <div class="col-lg-3 texto-footer"><img src="./componentes/icones/icon-codigo-de-barras.png" alt="ícone do boleto" class="icon-footer"></div>
-                    <div class="col-lg-3 texto-footer"><img src="./componentes/icones/icon-pix.png" alt="ícone do pix" class="icon-footer"></div>
+                    <div class="col-lg-3 texto-footer"><img src="./images/icones/icon-mastercard.png" alt="ícone do mastercard" class="icon-footer"></div>
+                    <div class="col-lg-3 texto-footer"><img src="./images/icones/icon-visa.png" alt="ícone da visa" class="icon-footer"></div>
+                    <div class="col-lg-3 texto-footer"><img src="./images/icones/icon-codigo-de-barras.png" alt="ícone do boleto" class="icon-footer"></div>
+                    <div class="col-lg-3 texto-footer"><img src="./images/icones/icon-pix.png" alt="ícone do pix" class="icon-footer"></div>
                 </div>
                 <div class="row d-lg-none col-12 justify-content-center py-3 mx-0">
                     <div class="texto-footer"><a class="link-footer" href="">LOGIN</a></div><br>
