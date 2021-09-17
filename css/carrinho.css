@@ -169,6 +169,15 @@ tbody{
     color:black !important;
 }
 
+.links-menu {
+    text-decoration: none;
+    color: black !important;
+}
+
+.links-menu:hover {
+    color: #FD4712 !important;
+}
+
 /* Banner carrinho  */
 /* .banner-carrinho {
     border-radius: 8px;

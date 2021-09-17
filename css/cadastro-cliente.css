@@ -2,3 +2,8 @@
     text-align: center;
     font-size: 25px;
 }
+
+.links-menu {
+    text-decoration: none;
+    color: black;
+}
