@@ -51,15 +51,23 @@ body{
 }
 
 .caixa-cadastro-cartao {
-    background-color: transparent;
+    background-color: #9a83b18c;
+    border: none;
     border-bottom: 1px solid black;
+    color:#000000;
+}
+
+.caixa-cadastro-cartao::placeholder{
+    color:#000000;
 }
 
 .caixa-cadastro-cartao:focus {
     box-shadow: none;
-    background-color: #efefef65;
+    background-color: #d3ccdb;
+    color: #000000;
     border-color: black;
 }
+
 /* formulario cartao */
 
 .linha-pagamento{
