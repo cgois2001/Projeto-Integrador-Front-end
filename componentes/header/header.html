@@ -13,7 +13,7 @@
 
 <body>
   <!-- INICIO HEADER -->
-  <header class="row m-0 p-0">
+  <header class="row justify-content-around">
     <div class="topo-header row px-3">
       <!-- INÍCIO LOGO  -->
       <div class="logo col-4 col-xs-4 col-md-2 col-lg-2 col-xl-3">
@@ -29,21 +29,21 @@
       </div>
       <!-- FIM BARRA DE PESQUISA -->
 
-      <!--BOTÃO DO MODAL-->
+      <!--BOTÃO DO LOGIN-->
       <div class="botoes-menu col-12 col-xs-12 col-md-4 col-lg-4 col-xl-3">
-        <button type="button" class="btn btn-primary btn-mvp btn-secundario-mvp btn-login" data-bs-toggle="modal"
+        <button type="button" class="btn btn-primary btn-mvp btn-secundario-mvp btn-login d-flex justify-content-center align-items-center" data-bs-toggle="modal"
           data-bs-target="#exampleModal">
           Login
         </button>
-      <!--FIM DO BOTÃO DO MODAL-->
+      <!--FIM DO BOTÃO DO LOGIN-->
       
-      <!-- BOTÃO DE LOGIN  -->
-        <button type="reset" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp btn-cadastrar"
+      <!-- BOTÃO DE CADASTRO  -->
+        <button type="reset" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp btn-cadastrar d-flex justify-content-center align-items-center"
           data-bs-dismiss="modal">
           Cadastre-se
         </button>
       </div>
-      <!-- FIM BOTÃO DE LOGIN -->
+      <!-- FIM BOTÃO DE CADASTRO -->
     </div>
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -108,7 +108,7 @@
               <div class="modal-footer d-flex flex-row justify-content-between">
                 <div class="col-2"></div>
                 <div class="btn btn-steam d-flex align-items-center col-6">
-                  <img class="col-2" src="/componentes/icones/icon-steam.png">
+                  <img class="col-2" src="/images/icones/icon-steam.png">
                   <a class="link-steam col-10" href="https://steamcommunity.com/login">LOGIN COM
                     STEAM</a>
                 </div>
@@ -144,11 +144,11 @@
           <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
             <img src="/images/icones/icon-menu.png" width="30" height="30">
           </a>
-          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+          <div class="offcanvas offcanvas-start menu-lateral" tabindex="-1" id="offcanvasExample"
             aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Titulo(Opcional)</h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel titulo-menu">Titulo(Opcional)</h5>
+              <button type="button" class="btn-close text-reset titulo-menu" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">

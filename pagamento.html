@@ -8,13 +8,220 @@
     <link href="componentes/formularios/styles.css" rel="stylesheet">
     <link href="./css/footer.css" rel="stylesheet">
     <link href="./componentes/botoes/botoes.css" rel="stylesheet">
-    <link href="./css/pagamento.css" rel="stylesheet">
+    <link rel='stylesheet' href="./componentes/header/header.css">
     <link rel='stylesheet' href="./componentes/modal-login/login.css">
-    <link rel='stylesheet' href="./Home/css/home.css">
-    <title>MVP Skins</title>
+    <link href="./css/pagamento.css" rel="stylesheet">
+    <title>MVP SKINS | PAGAMENTO</title>
 </head>
 <body>
+    <!-- INICIO HEADER -->
+  <header class="row justify-content-around">
+    <div class="topo-header row px-3">
+      <!-- INÍCIO LOGO  -->
+      <div class="logo col-4 col-xs-4 col-md-2 col-lg-2 col-xl-3">
+        <img src="/images/id/logo-final-1.png" width="130" alt="MVP">
+      </div>
+      <!-- FIM LOGO  -->
 
+      <!-- INÍCIO BARRA DE PESQUISA -->
+      <div class="barra-pesquisa col-8 col-xs-8 col-md-6 col-lg-6 col-xl-6">
+        <form class="d-flex">
+          <input type="search" class="input-search" placeholder="O que você esta procurando?" class="ps-2" />
+        </form>
+      </div>
+      <!-- FIM BARRA DE PESQUISA -->
+
+      <!--BOTÃO DO LOGIN-->
+      <div class="botoes-menu col-12 col-xs-12 col-md-4 col-lg-4 col-xl-3">
+        <button type="button" class="d-none btn btn-primary btn-mvp btn-secundario-mvp btn-login d-flex justify-content-center align-items-center" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">
+          Login
+        </button>
+      <!--FIM DO BOTÃO DO LOGIN-->
+      
+      <!-- BOTÃO DE CADASTRO  -->
+        <button type="reset" class="d-none btn btn-outline-secondary btn-mvp btn-secundario-mvp btn-cadastrar d-flex justify-content-center align-items-center"
+          data-bs-dismiss="modal">
+          Cadastre-se
+        </button>
+      </div>
+      <!-- FIM BOTÃO DE CADASTRO -->
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title  login-title" id="exampleModalLabel">FAÇA LOGIN</h5>
+          </div>
+          <div class="modal-body">
+            <div class="container d-flex flex-column">
+              <!--FORMULÁRIO DE LOGIN-->
+              <form>
+                <div class="mb-3">
+                  <label for="" class="form-label login-title">E-mail</label>
+                  <input type="email" class="form-control caixas-de-insercao login" aria-describedby="emailHelp"
+                    placeholder="Digite seu e-mail">
+                </div>
+                <div class="mb-3">
+                  <label for="" class="form-label login-title">Senha</label>
+                  <input type="password" class="form-control caixas-de-insercao login"
+                    placeholder="Digite sua senha">
+
+                  <!--BOTÃO DO COLLAPSE (ESQUECI A SENHA)-->
+                  <button class="links-login" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseWidthExample" aria-expanded="false"
+                    aria-controls="collapseWidthExample">
+                    Esqueci a senha
+                  </button>
+                  <!--FIM DO BOTÃO DO COLLAPSE-->
+                  <!--COLLAPSE (ESQUECI A SENHA)-->
+                  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                    <div class="card card-body redefinir-senha" style="width: 420px;">
+                      Esqueceu sua senha? Fique tranquilo, digite seu e-mail aqui em baixo para te
+                      enviarmos um e-mail com o link pra redefinição da sua senha:
+                      <p></p>
+                      <form>
+                        <div class="mb-3 d-flex justify-content-start">
+                          <input type="email" class="form-control caixas-de-insercao login"
+                            aria-describedby="emailHelp" placeholder="Digite seu e-mail">
+                        </div>
+                        <div class="d-flex flex-column justify-content-end">
+                          <button type="button" class="btn btn-primary btn-mvp btn-primario-mvp btn-logar"
+                            data-bs-toggle="collapse" data-bs-target="#collapseWidthExample1" aria-expanded="false"
+                            aria-controls="collapseWidthExample1">
+                            ENVIAR
+                          </button>
+                          <div class="collapse collapse-horizontal" id="collapseWidthExample1">
+                            <div class="card card-body redefinir-senha" style="width: 400px;">
+                              Já te enviamos o e-mail, cheque sua caixa de entrada para
+                              prosseguir com a redefinição da sua senha.
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <!--FIM DO COLLAPSE (ESQUECI A SENHA)-->
+                </div>
+              </form>
+              <!--FIM DO FORMULÁRIO DE LOGIN-->
+              <!--BOTÕES DO FORMULÁRIO-->
+              <div class="modal-footer d-flex flex-row justify-content-between">
+                <div class="col-2"></div>
+                <div class="btn btn-steam d-flex align-items-center col-6">
+                  <img class="col-2" src="/images/icones/icon-steam.png">
+                  <a class="link-steam col-10" href="https://steamcommunity.com/login">LOGIN COM
+                    STEAM</a>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-5 d-flex flex-column justify-content-start">
+                  <button type="reset" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp btn-cancelar"
+                    data-bs-dismiss="modal">
+                    CANCELAR
+                  </button>
+                </div>
+                <div class="col-6 d-flex flex-column justify-content-end">
+                  <button type="submit" class="btn btn-primary btn-mvp btn-primario-mvp btn-logar">
+                    LOGIN
+                  </button>
+                </div>
+                <div class="sem-conta">
+                  Não possui conta?
+                  <a class="links-login" href="#"> Cadastre-se</a>
+                </div>
+              </div>
+              <!--FIM DOS BOTÕES DO FORMULÁRIO-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--FIM DO MODAL-->
+
+    <!-- INICIO NAVBAR -->
+    <div class="row w-100 m-0 p-0">
+      <ul class="nav justify-content-around align-items-center nav-principal">
+        <li class="nav-item link-header">
+          <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <img src="/images/icones/icon-menu.png" width="30" height="30">
+          </a>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">CATEGORIAS</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between"> <a class="links-menu" href="">Facas</a>
+                    <img src="/images/icones/icon-faca.png" width="30" height="30">
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between"><a class="links-menu" href="">Luvas</a>
+                    <img src="/images/icones/icon-luva.png" width="30" height="30">
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between"><a class="links-menu" href="">Caixas</a>
+                    <img src="/images/icones/icon-caixa.png" width="30" height="30">
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between"><a class="links-menu" href="">Agentes</a>
+                    <img src="/images/icones/icon-agente.png" width="30" height="30">
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between"><a class="links-menu" href="">Armas</a>
+                    <img src="/images/icones/icon-arma.png" width="30" height="30">
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between">
+                    <a class="links-menu" href="/dashboardcliente.html">Seus Dados</a>
+                    <img src="/images/icones/icon-pessoa.png" width="30" height="30">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item categorias">
+          <a class="nav-link link-header" href="#">
+            <img src="/images/icones/icon-arma.png" width="30" height="30"> Armas
+          </a>
+        </li>
+        <li class="nav-item categorias">
+          <a class="nav-link link-header" href="#">
+            <img src="/images/icones/icon-faca.png" width="30" height="30"> Facas
+          </a>
+        </li>
+        <li class="nav-item categorias">
+          <a class="nav-link link-header" href="#">
+            <img src="/images/icones/icon-luva.png" width="30" height="30"> Luvas
+          </a>
+        </li>
+        <li class="nav-item categorias">
+          <a class="nav-link link-header" href="#">
+            <img src="/images/icones/icon-caixa.png" width="30" height="30"> Caixas
+          </a>
+        </li>
+        <li class="nav-item categorias">
+          <a class="nav-link link-header" href="#">
+            <img src="/images/icones/icon-agente.png" width="30" height="30"> Agentes
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-header" href="#">Favoritos
+            <img src="/images/icones/icon-coracao.png" width="30" height="30">
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link link-header" href="/carrinho.html">Carrinho
+            <img src="/images/icones/icon-carrinho.png" width="30" height="30">
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  <!-- FIM NAVBAR -->
+  </header>
+  <!-- FIM HEADER -->
     <!-- inicio pagamento -->
     <h1 class="h1-pagamento mt-4 mb-0">PAGAMENTO</h1>
     <section class="container d-flex mw-100 my-3 p-0">
@@ -112,19 +319,21 @@
                     <div class="row col-12 mx-0 p-2 h-20 div-pagamento">
                         <div class="col-2"><img class="formas-pagamento"src="./images/icones/icon-cupom.png" width=50px height=40px></div>
                         <div class="col-10 d-flex formas-pagamento">ADICIONAR UM CUPOM DE DESCONTO</div>
-                        <div class="row col-12 mx-0 my-3 p-0 justify-content-around">
+                        <div class="row col-12 mx-0 my-3 justify-content-around">
                             <input class="col-7" type="text" id="cupom" value="" placeholder="Insira o código">
-                            <button type="button" class="btn btn-primary btn-mvp btn-primario-mvp btn-cupom text-center col-5">SALVAR</button>
+                            <button type="button" class="btn btn-primary btn-mvp btn-primario-mvp btn-cupom col-4">SALVAR</button>
                         </div>
                     </div>
                     <div class="row col-12 mx-0 my-2 p-2 h-60 div-pagamento">
                         <div class="texto-pagamento my-2">TERMO DE ALGO</div>
                         <div class="texto-pagamento my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id scelerisque risus, at dapibus diam. Cras vel varius odio. Integer eu lectus nisi. In hac habitasse platea dictumst. Fusce at ligula in neque dictum auctor sed quis nisi. Integer quis interdum ligula, at tincidunt neque. Proin consequat lobortis odio vitae facilisis.</div>
-                        <input  class="col-1 formas-pagamento radio-pagamento" type="radio" name="aceite-termo" value="aceite-termo">
+                        <input  class="col-1 formas-pagamento radio-pagamento" type="checkbox" name="aceite-termo" value="aceite-termo">
                         <div class="col-11">EU ACEITO OS TERMOS E CONDIÇÕES</div>
                     </div>
                     <div class="row col-12 mx-0 p-2">
+                      <a href="/home.html">
                         <button type="button" class="btn btn-primary btn-mvp btn-primario-mvp col-12">FINALIZAR COMPRA</button>
+                      </a>
                     </div>
                 </div>
             </div>

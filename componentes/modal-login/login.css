@@ -113,8 +113,8 @@ background-image: linear-gradient(to bottom, #0F1B45, #0f1b4575 );
     color: #28004f !important;
 }
 
-.redefinicao-senha {
-    text-align: justify;
+.redefinir-senha {
+    color:black ;
 }
 
 .link-header{

@@ -1,0 +1,13 @@
+.titulo-cadastro {
+    text-align: center;
+    font-size: 25px;
+}
+
+.links-menu {
+    text-decoration: none;
+    color: black;
+}
+
+.links-menu:hover {
+    color: #FD4712;
+}

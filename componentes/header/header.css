@@ -31,6 +31,15 @@
 
 .btn-login {
     margin-right: 3vw;
+    font-size: 10px;
+}
+
+.menu-lateral {
+    background-image: linear-gradient(to bottom, black, rgb(20, 20, 20));
+}
+
+.titulo-menu {
+    color:#FD4712 !important;
 }
 
 /* MEDIAS QUERIES  */
@@ -61,6 +70,11 @@
 
     .btn-login {
         margin-right: 3vw;
+        font-size: 10px !important;
+    }
+
+    .btn-cadastrar {
+        font-size: 10px !important;
     }
 }
 
@@ -90,12 +104,28 @@
 
     .btn-login {
         margin-right: 3vw;
+        font-size: 13px !important;
     }
+
+    .btn-cadastrar {
+        font-size: 13px !important;
+    }
+    
 }
+
+
+
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
+    .btn-login {
+        margin-right: 3vw;
+        font-size: 13px !important;
+    }
 
+    .btn-cadastrar {
+        font-size: 13px !important;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
