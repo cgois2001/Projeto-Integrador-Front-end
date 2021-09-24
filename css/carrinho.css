@@ -10,7 +10,6 @@
 .container-carrinho {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .container-itens {
