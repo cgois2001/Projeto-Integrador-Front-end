@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="./css/estilo.css" rel="stylesheet">
+    <link href="componentes/formularios/styles.css" rel="stylesheet">
+    <link href="./css/footer.css" rel="stylesheet">
+    <link href="./componentes/botoes/botoes.css" rel="stylesheet">
+    <link rel='stylesheet' href="./componentes/header/header.css">
+    <link rel='stylesheet' href="./componentes/modal-login/login.css">
+    <link href="./css/pedido-finalizado.css" rel="stylesheet">
+    <title>MVP Skins | Pedido Finalizado</title>
+</head>
+
+<body>
+    <!-- INICIO HEADER -->
+    <header class="row justify-content-around">
+        <div class="topo-header row px-3">
+            <!-- INÍCIO LOGO  -->
+            <div class="logo col-4 col-xs-4 col-md-2 col-lg-2 col-xl-3">
+                <img src="/images/id/logo-final-1.png" width="130" alt="MVP">
+            </div>
+            <!-- FIM LOGO  -->
+
+            <!-- INÍCIO BARRA DE PESQUISA -->
+            <div class="barra-pesquisa col-8 col-xs-8 col-md-6 col-lg-6 col-xl-6">
+                <form class="d-flex">
+                    <input type="search" class="input-search" placeholder="O que você esta procurando?" class="ps-2" />
+                </form>
+            </div>
+            <!-- FIM BARRA DE PESQUISA -->
+
+            <!--BOTÃO DO LOGIN-->
+            <div class="botoes-menu col-12 col-xs-12 col-md-4 col-lg-4 col-xl-3">
+                <button type="button"
+                    class="btn btn-primary btn-mvp btn-secundario-mvp btn-login d-flex justify-content-center align-items-center"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Login
+                </button>
+                <!--FIM DO BOTÃO DO LOGIN-->
+
+                <!-- BOTÃO DE CADASTRO  -->
+                <button type="reset"
+                    class="btn btn-outline-secondary btn-mvp btn-secundario-mvp btn-cadastrar d-flex justify-content-center align-items-center"
+                    data-bs-dismiss="modal">
+                    Cadastre-se
+                </button>
+            </div>
+            <!-- FIM BOTÃO DE CADASTRO -->
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title  login-title" id="exampleModalLabel">FAÇA LOGIN</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container d-flex flex-column">
+                            <!--FORMULÁRIO DE LOGIN-->
+                            <form>
+                                <div class="mb-3">
+                                    <label for="" class="form-label login-title">E-mail</label>
+                                    <input type="email" class="form-control caixas-de-insercao login"
+                                        aria-describedby="emailHelp" placeholder="Digite seu e-mail">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="" class="form-label login-title">Senha</label>
+                                    <input type="password" class="form-control caixas-de-insercao login"
+                                        placeholder="Digite sua senha">
+
+                                    <!--BOTÃO DO COLLAPSE (ESQUECI A SENHA)-->
+                                    <button class="links-login" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseWidthExample" aria-expanded="false"
+                                        aria-controls="collapseWidthExample">
+                                        Esqueci a senha
+                                    </button>
+                                    <!--FIM DO BOTÃO DO COLLAPSE-->
+                                    <!--COLLAPSE (ESQUECI A SENHA)-->
+                                    <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                                        <div class="card card-body redefinir-senha" style="width: 420px;">
+                                            Esqueceu sua senha? Fique tranquilo, digite seu e-mail aqui em baixo para te
+                                            enviarmos um e-mail com o link pra redefinição da sua senha:
+                                            <p></p>
+                                            <form>
+                                                <div class="mb-3 d-flex justify-content-start">
+                                                    <input type="email" class="form-control caixas-de-insercao login"
+                                                        aria-describedby="emailHelp" placeholder="Digite seu e-mail">
+                                                </div>
+                                                <div class="d-flex flex-column justify-content-end">
+                                                    <button type="button"
+                                                        class="btn btn-primary btn-mvp btn-primario-mvp btn-logar"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseWidthExample1" aria-expanded="false"
+                                                        aria-controls="collapseWidthExample1">
+                                                        ENVIAR
+                                                    </button>
+                                                    <div class="collapse collapse-horizontal"
+                                                        id="collapseWidthExample1">
+                                                        <div class="card card-body redefinir-senha"
+                                                            style="width: 400px;">
+                                                            Já te enviamos o e-mail, cheque sua caixa de entrada para
+                                                            prosseguir com a redefinição da sua senha.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!--FIM DO COLLAPSE (ESQUECI A SENHA)-->
+                                </div>
+                            </form>
+                            <!--FIM DO FORMULÁRIO DE LOGIN-->
+                            <!--BOTÕES DO FORMULÁRIO-->
+                            <div class="modal-footer d-flex flex-row justify-content-between">
+                                <div class="col-2"></div>
+                                <div class="btn btn-steam d-flex align-items-center col-6">
+                                    <img class="col-2" src="/images/icones/icon-steam.png">
+                                    <a class="link-steam col-10" href="https://steamcommunity.com/login">LOGIN COM
+                                        STEAM</a>
+                                </div>
+                                <div class="col-2"></div>
+                                <div class="col-5 d-flex flex-column justify-content-start">
+                                    <button type="reset"
+                                        class="btn btn-outline-secondary btn-mvp btn-secundario-mvp btn-cancelar"
+                                        data-bs-dismiss="modal">
+                                        CANCELAR
+                                    </button>
+                                </div>
+                                <div class="col-6 d-flex flex-column justify-content-end">
+                                    <button type="submit" class="btn btn-primary btn-mvp btn-primario-mvp btn-logar">
+                                        LOGIN
+                                    </button>
+                                </div>
+                                <div class="sem-conta">
+                                    Não possui conta?
+                                    <a class="links-login" href="#"> Cadastre-se</a>
+                                </div>
+                            </div>
+                            <!--FIM DOS BOTÕES DO FORMULÁRIO-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FIM DO MODAL-->
+
+        <!-- INICIO NAVBAR -->
+        <div class="row w-100 m-0 p-0">
+            <ul class="nav justify-content-around align-items-center nav-principal">
+                <li class="nav-item link-header">
+                    <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        <img src="/images/icones/icon-menu.png" width="30" height="30">
+                    </a>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Titulo(Opcional)</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div>
+                                <ul class="list-group">
+                                    <li class="list-group-item d-flex justify-content-between"> Facas
+                                        <img src="/images/icones/icon-faca.png" width="30" height="30">
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">Luvas
+                                        <img src="/images/icones/icon-luva.png" width="30" height="30">
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">Caixas
+                                        <img src="/images/icones/icon-caixa.png" width="30" height="30">
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">Agentes
+                                        <img src="/images/icones/icon-agente.png" width="30" height="30">
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">Armas
+                                        <img src="/images/icones/icon-arma.png" width="30" height="30">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item categorias">
+                    <a class="nav-link link-header" href="#">
+                        <img src="/images/icones/icon-arma.png" width="30" height="30"> Armas
+                    </a>
+                </li>
+                <li class="nav-item categorias">
+                    <a class="nav-link link-header" href="#">
+                        <img src="/images/icones/icon-faca.png" width="30" height="30"> Facas
+                    </a>
+                </li>
+                <li class="nav-item categorias">
+                    <a class="nav-link link-header" href="#">
+                        <img src="/images/icones/icon-luva.png" width="30" height="30"> Luvas
+                    </a>
+                </li>
+                <li class="nav-item categorias">
+                    <a class="nav-link link-header" href="#">
+                        <img src="/images/icones/icon-caixa.png" width="30" height="30"> Caixas
+                    </a>
+                </li>
+                <li class="nav-item categorias">
+                    <a class="nav-link link-header" href="#">
+                        <img src="/images/icones/icon-agente.png" width="30" height="30"> Agentes
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-header" href="#">Favoritos
+                        <img src="/images/icones/icon-coracao.png" width="30" height="30">
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link link-header" href="#">Carrinho
+                        <img src="/images/icones/icon-carrinho.png" width="30" height="30">
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- FIM NAVBAR -->
+    </header>
+    <!-- FIM HEADER -->
+    <!-- pedido finalizado -->
+    <div class="row d-flex m-0 justify-content-center ">
+        <div class="col-10 d-flex px-0 flex-column justify-content-center confirmacao-pedido">
+            <div class="row col-12 justify-content-center titulo-pedido-finalizado">PRONTO!</div>
+            <div class="row col-12 justify-content-center conteudo-pedido-finalizado">Seu pedido nº 1234567 foi efetuado
+                com sucesso. Após a confirmação do pagamento
+                pela operadora, sua skin estará disponível em até 1 dia útil por meio de um Steam Trade Link que você
+                receberá em seu e-mail.</div>
+            <div class="row col-12 mx-0 p-3 justify-content-between">
+                <!-- Button de segunda importância  -->
+                <button type="button" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp my-2 col-12 col-lg-5">ACOMPANHAR PEDIDO</button>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-primary btn-mvp btn-primario-mvp my-2 col-12 col-lg-5">VOLTAR PARA A HOME</button>
+            </div>
+        </div>
+        <!-- fim pedido finalizado -->
+        <!-- inicio footer -->
+        <footer class="container d-flex justify-content-center mw-100 px-0">
+            <div class="row col-12 justify-content-around py-3">
+                <div class="row d-none d-lg-flex col-lg-8 justify-content-around">
+                    <!-- primeira coluna -->
+                    <div class="col-4">
+                        <div class="texto-footer">INSTITUCIONAL</div>
+                        <div class="texto-footer">PARCEIROS</div>
+                        <div class="texto-footer">TERMOS DE SERVIÇO</div>
+                        <div class="texto-footer">POLÍTICA DE PRIVACIDADE</div>
+                        <div class="texto-footer">POLÍTICA DE COOKIES</div>
+                    </div>
+                    <!-- segunda coluna -->
+                    <div class="col-4">
+                        <div class="texto-footer">COMO COMPRAR</div>
+                        <div class="texto-footer">COMO ME CADASTRAR</div>
+                        <div class="texto-footer">PAGAMENTOS</div>
+                        <div class="texto-footer">DEVOLUÇÕES</div>
+                        <div class="texto-footer">F.A.Q</div>
+                    </div>
+                    <!-- terceira coluna -->
+                    <div class="col-4">
+                        <div class="texto-footer"><a class="link-footer" href="">LOGIN</a></div>
+                        <div class="texto-footer"><a class="link-footer" href="">CADASTRE-SE</a></div>
+                        <div class="texto-footer"><a class="link-footer" href="">RECUPERAR SENHA</a></div>
+                        <div class="texto-footer"><a class="link-footer" href="">FALE CONOSCO</a></div>
+                    </div>
+                    <!-- dados da empresa -->
+                    <div class="row col-12 justify-content-center pt-3">© MVP SKINS 2021 | CNPJ: 61.585.865/0001-51 |
+                        TODOS OS DIREITOS RESERVADOS</div>
+                </div>
+                <!-- quarta coluna  -->
+                <div class="col-12 col-lg-4">
+                    <!-- redes sociais -->
+                    <div class="row col-12 justify-content-center pb-1 mx-0">SIGA A GENTE</div>
+                    <div class="row col-12 justify-content-center justify-content-lg-around py-1">
+                        <div class="col-2 col-lg-3 texto-footer">
+                            <a class="link-footer" href="https://www.facebook.com/" target="_blank">
+                                <img src="./images/icones/icon-facebook.png" alt="ícone do facebook"
+                                    class="icon-footer">
+                            </a>
+                        </div>
+                        <div class="col-2 col-lg-3 texto-footer">
+                            <a class="link-footer" href="https://twitter.com/" target="_blank">
+                                <img src="./images/icones/icon-twitter.png" alt="ícone do twitter" class="icon-footer">
+                            </a>
+                        </div>
+                        <div class="col-2 col-lg-3 texto-footer">
+                            <a class="link-footer" href="https://discord.com/" target="_blank">
+                                <img src="./images/icones/icon-discord.png" alt="ícone do discord" class="icon-footer">
+                            </a>
+                        </div>
+                        <div class="col-2 col-lg-3 texto-footer">
+                            <a class="link-footer" href="https://www.instagram.com/" target="_blank">
+                                <img src="./images/icones/icon-instagram.png" alt="ícone do instagram"
+                                    class="icon-footer">
+                            </a>
+                        </div>
+                    </div>
+                    <hr class="d-none d-lg-flex col-lg-12 justify-content-center">
+                    <!-- metodos de pagamento -->
+                    <div class="row d-none d-lg-flex col-12 justify-content-center pb-1 mx-0">MÉTODOS DE PAGAMENTO</div>
+                    <div class="row d-none d-lg-flex col-lg-12 justify-content-around py-1">
+                        <div class="col-lg-3 texto-footer"><img src="./images/icones/icon-mastercard.png"
+                                alt="ícone do mastercard" class="icon-footer"></div>
+                        <div class="col-lg-3 texto-footer"><img src="./images/icones/icon-visa.png" alt="ícone da visa"
+                                class="icon-footer"></div>
+                        <div class="col-lg-3 texto-footer"><img src="./images/icones/icon-codigo-de-barras.png"
+                                alt="ícone do boleto" class="icon-footer"></div>
+                        <div class="col-lg-3 texto-footer"><img src="./images/icones/icon-pix.png" alt="ícone do pix"
+                                class="icon-footer"></div>
+                    </div>
+                    <div class="row d-lg-none col-12 justify-content-center py-3 mx-0">
+                        <div class="texto-footer"><a class="link-footer" href="">LOGIN</a></div><br>
+                        <div class="texto-footer"><a class="link-footer" href="">CADASTRE-SE</a></div><br>
+                        <div class="texto-footer"><a class="link-footer" href="">RECUPERAR SENHA</a></div><br>
+                        <div class="texto-footer"><a class="link-footer" href="">FALE CONOSCO</a></div><br>
+                    </div>
+                    <div class="row d-lg-none col-12 justify-content-center py-3 mx-0 text-center">© MVP SKINS 2021 |
+                        CNPJ: 61.585.865/0001-51 | TODOS OS DIREITOS RESERVADOS</div>
+                </div>
+            </div>
+        </footer>
+        <!-- fim footer -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
