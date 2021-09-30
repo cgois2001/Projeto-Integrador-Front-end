@@ -1,13 +1,22 @@
 /* Container do card  */
+.carousel-item {
+    transition-timing-function: linear !important;
+    transition-delay: 0;
+    transition-duration: 0s;
+}
+
 .card-produto-mvp {
+    width: 14vw;
+    height: 48vh;
     align-items: center;
     background-color: #766289;
     color: #EFEFEF;
     border-radius: 8px;
+    box-shadow: 5px 4px 1px #FD4712;
 }
 
-h3 {
-    color: #EFEFEF;
+.card-produto-mvp img {
+    height: 17vh;
 }
 
 /* Paragráfo do card  */
@@ -17,22 +26,23 @@ h3 {
 
 /* Preço de promoção  */
 .promocao-de-preco{
-    font-size: .8rem;
+    font-size: .6rem;
     opacity: .7;
     text-decoration: line-through;
 }
 
 /* Preço de venda  */
 .preco {
-    font-size: 1rem;
-    font-weight: 900;
+    font-size: .9rem;
+    font-weight: 600;
 }
 
 /* Linha central do card  */
 .card-linha {
-    background-color: #28004F;
+    background-color: #28004f;
     width: 100%;
-    border-width: .4vh;
+    opacity: 1 !important;
+    border: 1px solid #28004f !important;
 }
 
 
@@ -50,11 +60,6 @@ h3 {
     .preco {
         font-size: .8rem;
     }
-    
-    .card-linha {
-        background-color: #28004F;
-        width: 100%;
-    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -68,11 +73,6 @@ h3 {
     
     .preco {
         font-size: .8rem;
-    }
-    
-    .card-linha {
-        background-color: #28004F;
-        width: 100%;
     }
 }
 
@@ -88,11 +88,6 @@ h3 {
     .preco {
         font-size: .9rem;
     }
-    
-    .card-linha {
-        background-color: #28004F;
-        width: 100%;
-    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -107,11 +102,6 @@ h3 {
     .preco {
         font-size: .9rem;
     }
-    
-    .card-linha {
-        background-color: #28004F;
-        width: 100%;
-    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -125,10 +115,5 @@ h3 {
     
     .preco {
         font-size: 1rem;
-    }
-    
-    .card-linha {
-        background-color: #28004F;
-        width: 100%;
     }
 }
