@@ -1,11 +1,32 @@
-.titulo-banner {
-    height: 50px;
-    background-color: #28004F;
-    text-align: center;
-    color: white;
-    font-weight: bold;
+.caixa-banner {
+    overflow: hidden;
+    margin-bottom: 5vh;
+    height: 70vh;
 }
 
-.caixa-banner {
-    background-color: #28004F;
+.titulo-banner-img {
+    z-index: 1;
+    /* background-color: #c4c4c45e; */
+}
+
+.titulo-banner {
+    height: 6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+}
+
+.titulo-banner p {
+    font-size: .8rem;
+    font-weight: 300;
+    letter-spacing: .5vw;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+.botao, .indicadores  {
+    height: 65vh;
+    color: white;
 }
