@@ -5,6 +5,10 @@
     flex-wrap: nowrap;
 }
 
+.controles {
+    justify-content: space-around !important;
+}
+
 /* MEDIAS QUERIES */
 
 /* Extra small devices (portrait phones, less than 576px) */

@@ -1,11 +1,24 @@
 /* Estilo de todos os botões */
 .btn-mvp {
-    font-weight: 700;
+    height: auto !important;
+    font-weight: 500;
     text-transform: uppercase;
     text-align: center;
-    font-size: 1rem;
+    font-size: .9rem;
     color: #EFEFEF;
+    background-color: #FD4712;
+    border-color: #FD4712;
 } 
+
+/* Estilos dos botões principais */
+/* .btn-primario-mvp {
+    border-color: #FD4712;
+} */
+
+/* Estilo dos botões secundários */
+/* .btn-secundario-mvp {
+
+} */
 
 /* Hover */
 .btn-mvp:hover, .btn-mvp a:hover, .btn-mvp:focus, .btn-mvp a:focus-within {
@@ -15,16 +28,4 @@
     color: #FD4712 !important;
     border-color: #FD4712 !important;
     border-width: 2px;
-}
-
-/* Estilos dos botões principais */
-.btn-primario-mvp {
-    border-color: #FD4712;
-    background-color: #FD4712;
-}
-
-/* Estilo dos botões secundários */
-.btn-secundario-mvp {
-    background-color: transparent !important;
-    border-color: #FD4712;
 }

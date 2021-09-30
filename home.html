@@ -5,54 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MVP SKINS</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel='stylesheet' href="./css/home.css">
-  <link rel='stylesheet' href="componentes/header/header.css">
-  <link rel='stylesheet' href="/componentes/modal-login/login.css">
-  <link rel='stylesheet' href="/componentes/banners/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel='stylesheet' href="css/home.css">
   <link rel='stylesheet' href="/css/estilo.css">
+  <link rel='stylesheet' href="/componentes/header/header.css">
+  <link rel='stylesheet' href="/componentes/modal-login/login.css">
+  <link rel='stylesheet' href="/componentes/banners/banners.css">
   <link rel='stylesheet' href="/componentes/footer/footer.css">
   <link rel="stylesheet" href="/componentes/carrousel-produtos/carrousel-produtos.css">
-
+  <link rel="stylesheet" href="/componentes/container-produto-grid/container-produto-grid.css">
+  <link rel="stylesheet" href="/componentes/botoes/botoes.css">
 </head>
 
 <body>
   <!-- INICIO HEADER -->
-  <header class="justify-content-around">
-    <div class="topo-header w-100">
+  <header>
+    <div class="topo-header w-100 px-3 py-0">
       <!-- INÍCIO LOGO  -->
-      <div class="logo col-4 col-xs-4 col-md-2 col-lg-2 col-xl-3">
-        <img src="/images/id/logo-final-1.png" width="130" alt="MVP">
+      <div class="logo my-0 col-4 col-xs-4 col-md-2 col-lg-2 col-xl-3">
+        <img src="/images/id//logo-clean.png" width="130" alt="MVP">
       </div>
       <!-- FIM LOGO  -->
 
       <!-- INÍCIO BARRA DE PESQUISA -->
-      <div class="barra-pesquisa col-8 col-xs-8 col-md-6 col-lg-6 col-xl-6">
+      <div class="barra-pesquisa my-0 col-8 col-xs-8 col-md-6 col-lg-6 col-xl-7">
         <form class="d-flex">
           <input type="search" class="input-search" placeholder="O que você esta procurando?" class="ps-2" />
         </form>
       </div>
       <!-- FIM BARRA DE PESQUISA -->
 
-      <!--BOTÃO DO LOGIN-->
-      <div class="botoes-menu col-12 col-xs-12 col-md-4 col-lg-4 col-xl-3">
-        <button type="button"
-          class="btn btn-primary btn-mvp btn-secundario-mvp btn-login d-flex justify-content-center align-items-center"
-          data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <div class="botoes-menu my-0 col-12 col-xs-12 col-md-4 col-lg-4 col-xl-2">
+        <!--BOTÃO DO LOGIN-->
+        <button type="button" class="btn btn-primary btn-mvp btn-secundario-mvp h-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
           Login
         </button>
         <!--FIM DO BOTÃO DO LOGIN-->
 
         <!-- BOTÃO DE CADASTRO  -->
-        <a class="link-header" href="/cadastro-cliente.html">
-          <button type="reset"
-            class="btn btn-outline-secondary btn-mvp btn-secundario-mvp btn-cadastrar d-flex justify-content-center align-items-center"
-            data-bs-dismiss="modal">
-            Cadastre-se
-          </button>
-        </a>
-
+        <button type="button" class="btn btn-outline-secondary btn-mvp btn-secundario-mvp h-auto" data-bs-dismiss="modal">
+          Cadastre-se
+        </button>
       </div>
       <!-- FIM BOTÃO DE CADASTRO -->
     </div>
@@ -69,16 +62,14 @@
               <form>
                 <div class="mb-3">
                   <label for="" class="form-label login-title">E-mail</label>
-                  <input type="email" class="form-control caixas-de-insercao login" aria-describedby="emailHelp"
-                    placeholder="Digite seu e-mail">
+                  <input type="email" class="form-control caixas-de-insercao login" aria-describedby="emailHelp" placeholder="Digite seu e-mail">
                 </div>
                 <div class="mb-3">
                   <label for="" class="form-label login-title">Senha</label>
                   <input type="password" class="form-control caixas-de-insercao login" placeholder="Digite sua senha">
 
                   <!--BOTÃO DO COLLAPSE (ESQUECI A SENHA)-->
-                  <button class="links-login" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                  <button class="links-login" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
                     Esqueci a senha
                   </button>
                   <!--FIM DO BOTÃO DO COLLAPSE-->
@@ -230,994 +221,1145 @@
   </header>
   <!-- FIM HEADER -->
 
-  <!--BANNER-CARROUSEL DA PARTE DE DESTAQUES-->
-  <div class="container-fluid d-flex justify-content-center align-items-center titulo-banner">
-    Destaques
-  </div>
-  <div class="container-fluid caixa-banner">
-    <div id="carrousel-destaque" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carrousel-destaque" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carrousel-destaque" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carrousel-destaque" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <body>
+    <!--BANNER-CARROUSEL DA PARTE DE DESTAQUES-->
+    <div class="container-fluid caixa-banner m-0 mb-4 p-0">
+      <div class="container-fluid titulo-banner titulo-banner-img">
+        <p>Destaques</p>
       </div>
-      <div class="carousel-inner banner">
+      <div id="carrousel-destaque" class="carousel slide indicadores" data-bs-ride="carousel">
+        <div class="carousel-indicators ">
+          <button type="button" data-bs-target="#carrousel-destaque" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carrousel-destaque" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carrousel-destaque" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner banner ">
+          <div class="carousel-item active banner-img">
+            <img src="/images/banners/csgoskin1.jpeg" class="w-100" alt="...">
+          </div>
+
+          <div class="carousel-item banner-img">
+            <img src="/images/banners/csgoskin2.jfif" class="d-block w-100" alt="...">
+          </div>
+
+          <div class="carousel-item banner-img">
+            <img src="/images/banners/csgoskin3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev botao" type="button" data-bs-target="#carrousel-destaque"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next botao" type="button" data-bs-target="#carrousel-destaque"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!--FIM BANNER-CARROUSEL DA PARTE DE DESTAQUES-->
+
+    <!--BANNER-CARROUSEL DA PARTE DE EVENTOS-->
+    <div class="container-fluid caixa-banner m-0 mb-4 p-0">
+      <div class="container-fluid d-flex justify-content-center titulo-banner titulo-banner-img">
+        <p>Eventos</p>
+      </div>
+
+      <div id="carrousel-evento " class="carousel slide indicadores" data-bs-ride="carousel">
+        <div class="carousel-indicators ">
+          <button type="button" data-bs-target="#carrousel-evento" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carrousel-evento" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carrousel-evento" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner banner">
+          <div class="carousel-item active banner-img ">
+            <img src="/images/banners/banner-eventos-3.png" class="w-100" alt="...">
+          </div>
+
+          <div class="carousel-item banner-img ">
+            <img src="/images/banners/banner-eventos-2.png" class="d-block w-100" alt="...">
+          </div>
+
+          <div class="carousel-item banner-img ">
+            <img src="/images/banners/banner-eventos-1.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev botao" type="button" data-bs-target="#carrousel-evento"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next botao" type="button" data-bs-target="#carrousel-evento"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Início do carousel de produtos  -->
+    <!-- Título do carousel  -->
+    <div class="container-fluid d-flex justify-content-center align-items-center titulo-banner ">
+      <p>Top Armas</p>
+    </div>
+
+    <!-- Carousel -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <!-- Container dos cards de produtos -->
+      <div class="carousel-inner w-auto mb-3">
+        <!-- ========================PRIMEIRA PÁGINA DO CAROUSEL======================== -->
         <div class="carousel-item active">
-          <img src="/images/banners/banner-destaques-1.png" class="w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Comece a jogar agora</h5>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, nisi illo fuga excepturi veritatis
-              repellat animi pariatur dolorem perspiciatis consequuntur iusto exercitationem voluptas explicabo incidunt
-              similique suscipit rerum quisquam asperiores?</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="/images/banners/banner-destaques-2.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Top skins</h5>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas excepturi ipsum assumenda ad deleniti
-              vero, commodi quam illo ratione accusamus mollitia repellendus nemo nulla nostrum harum itaque placeat hic
-              est!</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="/images/banners/banner-destaque-3.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Outros</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum repellat, fuga cumque saepe
-              incidunt voluptatibus sint ad dolore animi rem tempore odit ea assumenda ducimus modi impedit sit at.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carrousel-destaque" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carrousel-destaque" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-  <!--FIM BANNER-CARROUSEL DA PARTE DE DESTAQUES-->
+          <div class="cards-produtos">
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
 
-  <!--BANNER-CARROUSEL DA PARTE DE EVENTOS-->
-  <div class="container-fluid d-flex justify-content-center align-items-center titulo-banner">
-    Eventos
-  </div>
-  <div class="container-fluid caixa-banner">
-    <div id="carrousel-evento" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carrousel-evento" data-bs-slide-to="0" class="active" aria-current="true"
-          aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carrousel-evento" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carrousel-evento" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">TESTE Nº1 SKIN ARMA</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-2 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-3 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-4 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ========================SEGUNDA PÁGINA DO CAROUSEL======================== -->
+        <div class="carousel-item">
+          <div class="cards-produtos">
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-2 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-3 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-4 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Info dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ========================TERCEIRA PÁGINA DO CAROUSEL======================== -->
+        <div class="carousel-item">
+          <div class="cards-produtos">
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Info dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-2 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-3 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-4 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="carousel-inner banner">
+
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+    </div>
+    <!-- Fim carousel -->
+
+    <!-- Título do carousel  -->
+    <div class="container-fluid d-flex justify-content-center align-items-center titulo-banner ">
+      <p>Top Armas</p>
+    </div>
+    
+    <!-- Carousel -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <!-- Container dos cards de produtos -->
+      <div class="carousel-inner w-auto mb-3">
+        <!-- ========================PRIMEIRA PÁGINA DO CAROUSEL======================== -->
         <div class="carousel-item active">
-          <img src="/images/banners/banner-eventos-3.png" class="w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Campeonatos</h5>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, nisi illo fuga excepturi veritatis
-              repellat animi pariatur dolorem perspiciatis consequuntur iusto exercitationem voluptas explicabo incidunt
-              similique suscipit rerum quisquam asperiores?</p>
+          <div class="cards-produtos">
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">TESTE Nº1 SKIN ARMA</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-2 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-3 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-4 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- ========================SEGUNDA PÁGINA DO CAROUSEL======================== -->
         <div class="carousel-item">
-          <img src="/images/banners/banner-eventos-2.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Ligas</h5>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas excepturi ipsum assumenda ad deleniti
-              vero, commodi quam illo ratione accusamus mollitia repellendus nemo nulla nostrum harum itaque placeat hic
-              est!</p>
+          <div class="cards-produtos">
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-2 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-3 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-4 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Info dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- ========================TERCEIRA PÁGINA DO CAROUSEL======================== -->
         <div class="carousel-item">
-          <img src="/images/banners/banner-eventos-1.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Brasil Representa!</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum repellat, fuga cumque saepe
-              incidunt voluptatibus sint ad dolore animi rem tempore odit ea assumenda ducimus modi impedit sit at.</p>
+          <div class="cards-produtos">
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Info dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-2 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-3 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-4 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carrousel-evento" data-bs-slide="prev">
+
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carrousel-evento" data-bs-slide="next">
+        <span class="sr-only"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+        <span class="sr-only"></span>
+      </a>
     </div>
-  </div>
-  <div class="container-fluid d-flex justify-content-center align-items-center titulo-banner ">
-    Top Armas
-  </div>
-  <!-- Início do carousel de produtos  -->
-  <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-    <!-- Barra inferior de navegação do carousel  -->
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
-    </ol>
+    <!-- Fim carousel -->
 
-    <!-- Container dos cards de produtos -->
-    <div class="carousel-inner carousel-produtos">
-      <!-- ========================PRIMEIRA PÁGINA DO CAROUSEL======================== -->
-      <div class="carousel-item active">
-        <div class="cards-produtos">
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-2 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-3 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-4 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ========================SEGUNDA PÁGINA DO CAROUSEL======================== -->
-      <div class="carousel-item">
-        <div class="cards-produtos">
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-2 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-3 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-4 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Info dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ========================TERCEIRA PÁGINA DO CAROUSEL======================== -->
-      <div class="carousel-item">
-        <div class="cards-produtos">
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Info dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-2 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-3 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-4 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Título do carousel  -->
+    <div class="container-fluid d-flex justify-content-center align-items-center titulo-banner ">
+      <p>Top Armas</p>
     </div>
+    
+    <!-- Carousel -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <!-- Container dos cards de produtos -->
+      <div class="carousel-inner w-auto mb-3">
+        <!-- ========================PRIMEIRA PÁGINA DO CAROUSEL======================== -->
+        <div class="carousel-item active">
+          <div class="cards-produtos">
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
 
-    <!-- Voltar -->
-    <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Anterior</span>
-    </a>
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
 
-    <!-- Avançar  -->
-    <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Próximo</span>
-    </a>
-  </div>
-
-  <div class="container-fluid d-flex justify-content-center align-items-center titulo-banner ">
-    Top Agentes
-  </div>
-
-  <!-- Início do carousel de produtos  -->
-  <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-    <!-- Barra inferior de navegação do carousel  -->
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Container dos cards de produtos -->
-    <div class="carousel-inner carousel-produtos">
-      <!-- ========================PRIMEIRA PÁGINA DO CAROUSEL======================== -->
-      <div class="carousel-item active">
-        <div class="cards-produtos">
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">TESTE Nº1 SKIN ARMA</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
             </div>
 
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
 
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-2 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-3 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-4 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
             </div>
           </div>
+        </div>
 
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-2 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
+        <!-- ========================SEGUNDA PÁGINA DO CAROUSEL======================== -->
+        <div class="carousel-item">
+          <div class="cards-produtos">
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
             </div>
 
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
 
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-2 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-3 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-4 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Info dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
             </div>
           </div>
+        </div>
 
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-3 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
+        <!-- ========================TERCEIRA PÁGINA DO CAROUSEL======================== -->
+        <div class="carousel-item">
+          <div class="cards-produtos">
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
             </div>
 
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
 
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Info dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
             </div>
-          </div>
 
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-4 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-2 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
             </div>
 
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-3 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
 
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Card de produtos -->
+            <div class="card card-produto-mvp card-4 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              <!-- Imagem do produto  -->
+              <div class="card-body border-bottom-3 card-produto">
+                <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
+                  alt="Imagem de capa do card">
+              </div>
+
+              <!-- Linha  -->
+              <hr class="card-linha p-0 m-0">
+
+              <!-- Infos dos cards  -->
+              <div class="card-body card-produto px-3 py-3">
+                <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
+                <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
+                <p class="card-text preco">por R$ PREÇO</p>
+                <!-- Button de primeira importância -->
+                <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- ========================SEGUNDA PÁGINA DO CAROUSEL======================== -->
-      <div class="carousel-item">
-        <div class="cards-produtos">
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-2 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-3 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-4 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Info dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ========================TERCEIRA PÁGINA DO CAROUSEL======================== -->
-      <div class="carousel-item">
-        <div class="cards-produtos">
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Info dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-2 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-3 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-4 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
     </div>
-
-    <!-- Voltar -->
-    <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Anterior</span>
-    </a>
-
-    <!-- Avançar  -->
-    <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Próximo</span>
-    </a>
-  </div>
-
-  <div class="container-fluid d-flex justify-content-center align-items-center titulo-banner ">
-    Top Facas
-  </div>
-
-  <!-- Início do carousel de produtos  -->
-  <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-    <!-- Barra inferior de navegação do carousel  -->
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Container dos cards de produtos -->
-    <div class="carousel-inner carousel-produtos">
-      <!-- ========================PRIMEIRA PÁGINA DO CAROUSEL======================== -->
-      <div class="carousel-item active">
-        <div class="cards-produtos">
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-2 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-3 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-4 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ========================SEGUNDA PÁGINA DO CAROUSEL======================== -->
-      <div class="carousel-item">
-        <div class="cards-produtos">
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-2 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-3 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-4 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Info dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ========================TERCEIRA PÁGINA DO CAROUSEL======================== -->
-      <div class="carousel-item">
-        <div class="cards-produtos">
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-1 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Info dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-2 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-3 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-
-          <!-- Card de produtos -->
-          <div class="card card-produto-mvp card-4 p-0 m-3 col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-            <!-- Imagem do produto  -->
-            <div class="card-body border-bottom-3 card-produto">
-              <img class="card-img-top img-produto-mvp" src="/images/PRODUTOS/produto-carrousel-1.png"
-                alt="Imagem de capa do card">
-            </div>
-
-            <!-- Linha  -->
-            <hr class="card-linha p-0 m-0">
-
-            <!-- Infos dos cards  -->
-            <div class="card-body card-produto px-3 py-3">
-              <h3 class="card-title">AK-47 | LINHAS VERMELHAS</h3>
-              <p class="card-text promocao-de-preco p-0 m-0">de R$ PREÇO</p>
-              <p class="card-text preco">por R$ PREÇO</p>
-              <!-- Button de primeira importância -->
-              <button type="button" class="btn btn-mvp btn-primary btn-primario-mvp col-12">Comprar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Voltar -->
-    <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Anterior</span>
-    </a>
-
-    <!-- Avançar  -->
-    <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Próximo</span>
-    </a>
-  </div>
+      <!-- Fim carousel -->
+  </body>
 
   <!--inicio footer-->
   <footer class="container d-flex justify-content-center mw-100 px-0">
@@ -1295,20 +1437,13 @@
           <div class="texto-footer"><a class="link-footer" href="">RECUPERAR SENHA</a></div><br>
           <div class="texto-footer"><a class="link-footer" href="">FALE CONOSCO</a></div><br>
         </div>
-        <div class="row d-lg-none col-12 justify-content-center py-3 mx-0 text-center">© MVP SKINS 2021 | CNPJ:
-          61.585.865/0001-51 | TODOS OS DIREITOS RESERVADOS</div>
+        <div class="row d-lg-none col-12 justify-content-center py-3 mx-0 text-center">© MVP SKINS 2021 | CNPJ: 61.585.865/0001-51 | TODOS OS DIREITOS RESERVADOS</div>
       </div>
     </div>
   </footer>
   <!-- fim footer -->
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-    integridade="sha384- / bQdsTh / da6pkI1MST / rWKFNjaCP5gBSY4sEBT38Q / 9RBh9AH40zEOg7Hlq2THRZ "
-    crossorigin="anonymous"> </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>

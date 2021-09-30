@@ -5,8 +5,6 @@
     justify-content: space-between;
     background-color: #181818;
     width: 100vw;
-    height: 13vh;
-    
 }
 
 .logo {
@@ -14,19 +12,26 @@
     align-content: center;
 }
 
+.logo img {
+    width: 7vw;
+}
+
 .barra-pesquisa {
-    border-radius: 8px;
+    border-radius: 2px;
 }
 
 .input-search{
-    border-radius: 8px;
+    height: 5vh;
+    border: none;
+    padding: 0.5vh 1vw;
+    border-radius: 4px;
     width: 80%;
 }
 
 .botoes-menu {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: flex-end;
+    justify-content: space-around;
 }
 
 .btn-login {
