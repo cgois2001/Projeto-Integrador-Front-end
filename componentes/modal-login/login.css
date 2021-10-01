@@ -87,22 +87,6 @@ background-image: linear-gradient(to bottom, #0F1B45, #0f1b4575 );
     color:black ;
 }
 
-.link-header{
-    color:black;
-}
-.link-header:hover{
-    color:#FD4712;
-}
-.nav-principal{
-    background-color: #EFEFEF;
-
-}
-
-.botoes-header-d-flex{
-    display:flex;
-    flex-wrap: nowrap;
-
-}
 @media(max-width:855px){
     .categorias{
         display:none;

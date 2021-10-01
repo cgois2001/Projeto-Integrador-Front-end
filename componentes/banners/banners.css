@@ -2,6 +2,7 @@
     overflow: hidden;
     margin-bottom: 5vh;
     height: 70vh;
+    box-shadow: 5px 4px 1px #FD4712;
 }
 
 .titulo-banner-img {
