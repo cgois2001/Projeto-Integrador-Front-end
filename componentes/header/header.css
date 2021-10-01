@@ -47,6 +47,27 @@
     color:#FD4712 !important;
 }
 
+.link-header img {
+    width: auto;
+    height: 3.5vh;
+}
+
+.link-header{
+    color:black;
+}
+.link-header:hover{
+    color:#FD4712;
+}
+
+.nav-principal{
+    background-color: #EFEFEF;
+}
+
+.botoes-header-d-flex{
+    display:flex;
+    flex-wrap: nowrap;
+}
+
 /* MEDIAS QUERIES  */
 
 /* Extra small devices (portrait phones, less than 576px) */
