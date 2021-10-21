@@ -1,4 +1,9 @@
 /* Container do card  */
+
+.carousel-control-next, .carousel-control-prev {
+    width: 10vw !important;
+}
+
 .carousel-item {
     transition-timing-function: linear !important;
     transition-delay: 0;
@@ -15,8 +20,20 @@
     box-shadow: 5px 4px 1px #FD4712;
 }
 
-.card-produto-mvp img {
+.card-produto-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.img-produto-mvp {
     height: 17vh;
+}
+
+.favoritar-produto {
+    z-index: 1;
+    height: 3vh;
 }
 
 /* Paragráfo do card  */
@@ -110,10 +127,10 @@
         font-size: .9rem;
     }
     .promocao-de-preco{
-        font-size: .8rem;
+        font-size: .7rem;
     }
     
     .preco {
-        font-size: 1rem;
+        font-size: .9rem;
     }
 }
